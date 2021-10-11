@@ -22,6 +22,7 @@ CREATE TABLE Catégories(
 --
 CREATE TABLE Modeles(
    idModele INT AUTO_INCREMENT PRIMARY KEY ,
+   
    numModele VARCHAR(8) ,
    nomModele VARCHAR(50) ,
    dateSurMarcheModele DATE
