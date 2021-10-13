@@ -1,0 +1,137 @@
+[{
+  "_id": {
+    "$oid": "6166ae409b8b0890f2ddd8e6"
+  },
+  "mod_nom": "C3",
+  "mod_marque": "Citroën",
+  "mod_cylindree": 1,
+  "mod_prix": 13500,
+  "mod_date_ajout": {
+    "$date": "2021-10-13T10:00:32.218Z"
+  }
+},{
+  "_id": {
+    "$oid": "6166b2e85f92b780acb1103a"
+  },
+  "mod_nom": "Cactus",
+  "mod_marque": "Citroën",
+  "mod_cylindree": 1,
+  "mod_prix": 18470,
+  "mod_date_ajout": {
+    "$date": "2021-10-13T10:20:24.199Z"
+  },
+  "mod_d_dispo": {
+    "$date": "2018-10-20T00:00:00Z"
+  },
+  "mod_options": "toit",
+  "a": 2
+},{
+  "_id": {
+    "$oid": "6166b2ed5f92b780acb1103b"
+  },
+  "mod_nom": "toto",
+  "mod_marque": "Citroën",
+  "mod_cylindree": 1,
+  "mod_prix": 18470,
+  "mod_date_ajout": {
+    "$date": "2021-10-13T10:20:29.451Z"
+  },
+  "mod_d_dispo": {
+    "$date": "2018-10-20T00:00:00Z"
+  },
+  "mod_options": [
+    "Toit ouvrant",
+    "Peinture métallisée"
+  ]
+},{
+  "_id": {
+    "$oid": "6166b2ee5f92b780acb1103c"
+  },
+  "mod_nom": "toto",
+  "mod_marque": "Citroën",
+  "mod_cylindree": 1,
+  "mod_prix": 18470,
+  "mod_date_ajout": {
+    "$date": "2021-10-13T10:20:30.057Z"
+  },
+  "mod_d_dispo": {
+    "$date": "2018-10-20T00:00:00Z"
+  },
+  "mod_options": [
+    "Toit ouvrant",
+    "Peinture métallisée"
+  ]
+},{
+  "_id": {
+    "$oid": "6166c65e5f92b780acb1103d"
+  },
+  "mod_nom": "toto",
+  "mod_marque": "Citroën",
+  "mod_cylindree": 1,
+  "mod_prix": 18470,
+  "mod_date_ajout": {
+    "$date": "2021-10-13T11:43:26.135Z"
+  },
+  "mod_d_dispo": {
+    "$date": "2018-10-20T00:00:00Z"
+  },
+  "mod_options": [
+    "Toit ouvrant",
+    "Peinture métallisée"
+  ]
+}]
+
+/**
+use voitures
+'switched to db voitures'
+db.modeles.updateOne( {"mod_nom" : "Cactus"}, { $set: { "a.2" : "toit" } } )
+{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0 }
+{"_id":{"$oid":"1"},"mod_nom":"C3","mod_marque":"Citroën","mod_cylindree":1,"mod_prix":13500,"mod_date_ajout":{"$date":"2021-10-13T10:00:32.218Z"}}
+SyntaxError: Missing semicolon. (1:6)
+
+> 1 | {"_id":{"$oid":"1"},"mod_nom":"C3","mod_marque":"Citroën","mod_cylindree":1,"mod_prix":13500,"mod_date_ajout":{"$date":"2021-10-13T10:00:32.218Z"}}
+    |       ^
+{"_id":{"$oid":"1"},"mod_nom":"C3","mod_marque":"Citroën","mod_cylindree":1,"mod_prix":13500,"mod_date_ajout":{"$date":"2021-10-13T10:00:32.218Z"}}
+SyntaxError: Missing semicolon. (1:6)
+
+> 1 | {"_id":{"$oid":"1"},"mod_nom":"C3","mod_marque":"Citroën","mod_cylindree":1,"mod_prix":13500,"mod_date_ajout":{"$date":"2021-10-13T10:00:32.218Z"}}
+    |       ^
+db.modeles.updateOne( {"mod_nom" : "Cactus"}, { $set: { "mod_options" : "toit" } } )
+{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0 }
+db.modeles.updateOne( {"mod_nom" : "Cactus"}, { $set: { "a" : 2 } } )
+{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0 }
+db.modeles.updateOne( {"mod_nom" : "Cactus"}, { $pull: { "a" : 2 } } )
+MongoServerError: Cannot apply $pull to a non-array value
+db.modeles.updateOne( {"mod_nom" : "Cactus"}, { $pull: { "mod_options" : "GPS" } } )
+MongoServerError: Cannot apply $pull to a non-array value
+db.modeles.updateOne ({"mod_options" : "GPS"}, {$set : {"mod_nom" : "toto"}})
+{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0 }
+db.modeles.updateMany ({"mod_options" : "GPS"}, {$set : {"mod_nom" : "toto"}})
+{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 3,
+  modifiedCount: 2,
+  upsertedCount: 0 }
+db.modeles.updateMany( {"mod_nom" : "toto"}, { $pull: { "mod_options" : "GPS" } } )
+{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 3,
+  modifiedCount: 3,
+  upsertedCount: 0 }
+**/
