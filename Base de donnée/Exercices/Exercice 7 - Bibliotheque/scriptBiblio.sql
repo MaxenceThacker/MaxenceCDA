@@ -35,8 +35,7 @@ CREATE TABLE Auteurs(
 
 CREATE TABLE Genres(
    IdGenre INT AUTO_INCREMENT PRIMARY KEY,
-   NomGenre VARCHAR(50) ,
-   PRIMARY KEY(IdGenre)
+   NomGenre VARCHAR(50)
 )ENGINE=InnoDB;
 
 --
@@ -45,8 +44,7 @@ CREATE TABLE Genres(
 
 CREATE TABLE Editeurs(
    IdEditeur INT AUTO_INCREMENT PRIMARY KEY,
-   NomEditeur VARCHAR(50) ,
-   PRIMARY KEY(IdEditeur)
+   NomEditeur VARCHAR(50)
 )ENGINE=InnoDB;
 
 --
@@ -55,9 +53,7 @@ CREATE TABLE Editeurs(
 
 CREATE TABLE Usures(
    IdUsure INT AUTO_INCREMENT PRIMARY KEY,
-   CodeUsure VARCHAR(50) ,
-   PRIMARY KEY(IdUsure)
-)ENGINE=InnoDB;
+   CodeUsure VARCHAR(50)
 
 --
 --  CategoriesProfessionnelles
@@ -65,8 +61,7 @@ CREATE TABLE Usures(
 
 CREATE TABLE CategoriesProfessionnelles(
    IdCategorieProfessionnelle INT AUTO_INCREMENT PRIMARY KEY,
-   LibelleCategPro VARCHAR(50) ,
-   PRIMARY KEY(IdCategorieProfessionnelle)
+   LibelleCategPro VARCHAR(50)
 )ENGINE=InnoDB;
 
 --
@@ -75,8 +70,7 @@ CREATE TABLE CategoriesProfessionnelles(
 
 CREATE TABLE MotsCles(
    IdMotCle INT AUTO_INCREMENT PRIMARY KEY,
-   LibelleMotCle VARCHAR(50) ,
-   PRIMARY KEY(IdMotCle)
+   LibelleMotCle VARCHAR(50)
 )ENGINE=InnoDB;
 
 --
@@ -88,10 +82,7 @@ CREATE TABLE Livres(
    TitreLivre VARCHAR(50) ,
    CodeCatalogue VARCHAR(50) ,
    IdEditeur INT NOT NULL,
-   IdTheme INT NOT NULL,
-   PRIMARY KEY(IdLivre),
-   FOREIGN KEY(IdEditeur) REFERENCES Editeurs(IdEditeur),
-   FOREIGN KEY(IdTheme) REFERENCES Themes(IdTheme)
+   IdTheme INT NOT NULL
 )ENGINE=InnoDB;
 
 --
@@ -104,10 +95,7 @@ CREATE TABLE Exemplaires(
    Disponibilite BOOLEAN,
    CodeRayon VARCHAR(50) ,
    IdUsure INT NOT NULL,
-   IdLivre INT NOT NULL,
-   PRIMARY KEY(IdExemplaire),
-   FOREIGN KEY(IdUsure) REFERENCES Usures(IdUsure),
-   FOREIGN KEY(IdLivre) REFERENCES Livres(IdLivre)
+   IdLivre INT NOT NULL
 )ENGINE=InnoDB;
 
 --
@@ -192,3 +180,9 @@ CREATE TABLE Identifications(
    FOREIGN KEY(IdMotCle) REFERENCES MotsCles(IdMotCle)
 )ENGINE=InnoDB;
 
+ALTER TABLE Livres 
+ADD CONSTRAINT Fk_Livres_Editeur FOREIGN KEY(IdEditeur) REFERENCES Editeurs(IdEditeur),
+ADD CONSTRAINT Fk_Livres_Theme FOREIGN KEY(IdTheme) REFERENCES Themes(IdTheme);
+ALTER TABLE Exemplaires
+ADD CONSTRAINT Fk_Exemplaires_Usure FOREIGN KEY(IdUsure) REFERENCES Usures(IdUsure),
+ADD CONSTRAINT Fk_Livres_Livre FOREIGN KEY(IdLivre) REFERENCES Livres(IdLivre);
