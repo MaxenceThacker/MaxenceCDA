@@ -113,4 +113,34 @@ WHERE nom LIKE '%n'
 
 SELECT nom AS 'Nom Employe' 
 FROM employe 
-WHERE SUBSTR(nom, 2, 1) = 'u'
+WHERE SUBSTR(nom, 3, 1) = 'u'
+
+-- QUESTION 18 --
+------------------------------------------------------------------------------------------VOIR CORRECTION TU ES TROP LENT !!!!-----------------------------------------------------
+
+--QUESTION 28--
+
+SELECT CONCAT (`nom`," ",`prenom`) AS 'Nom Entier Employe'
+FROM employe
+
+-- QUESTION 29--
+
+SELECT SUBSTR(nom, 1, 5)
+FROM employe
+
+-- QUESTION 30--
+
+SELECT LOCATE('r', nom), nom AS 'Nom Employe'
+FROM employe
+
+-- QUESTION 31--
+
+SELECT nom, UPPER(nom) AS 'Nom Employe Majuscule', LOWER(nom) AS 'Nom Employe Minuscule'
+FROM employe
+WHERE nom = 'Vrante' 
+
+--Questions 32--
+
+SELECT nom AS 'Nom Employe', LENGTH(nom) AS 'Nombre Caractère Nom Employe'
+FROM employe
+
