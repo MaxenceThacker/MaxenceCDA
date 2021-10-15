@@ -33,4 +33,4 @@ GROUP BY D.noregion
 SELECT nodep
 FROM employe
 GROUP BY nodep
-WHERE nodep >= 3
+HAVING nodep >= 3
