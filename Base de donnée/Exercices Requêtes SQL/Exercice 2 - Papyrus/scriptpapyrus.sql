@@ -29,5 +29,9 @@ ORDER BY nomfou
 
 --6 
 
+SELECT numcom, datcom
+FROM entcom
+WHERE datcom LIKE '%-03-%' OR datecom LIKE '%-04-%'
 
+--7
 
