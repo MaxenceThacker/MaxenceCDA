@@ -19,3 +19,15 @@ GROUP BY numfou
 SELECT codart, libart, stkphy, stkale, qteann
 FROM produit
 WHERE stkphy <= stkale AND qtnann < 1000
+
+--5
+
+SELECT *
+FROM fournis
+WHERE posfou LIKE '75___' OR posfou LIKE '78___' OR posfou LIKE '92___' OR posfou LIKE '77___'
+ORDER BY nomfou 
+
+--6 
+
+
+
