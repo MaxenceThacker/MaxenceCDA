@@ -35,3 +35,37 @@ WHERE datcom LIKE '%-03-%' OR datecom LIKE '%-04-%'
 
 --7
 
+SELECT numcom, datcom, obscom
+FROM entcom
+WHERE obscom <> "" AND datcom = DATE(NOW())
+
+--8
+
+SELECT Num, (Totalqte*Totalprix) AS 'Total'
+FROM (SELECT numcom AS 'Num', SUM(qtecde) AS 'Totalqte', SUM(priuni) AS 'Totalprix' FROM ligcom GROUP BY numcom) AS Lig
+ORDER BY Total DESC
+
+--9
+
+SELECT Num, (Totalqte*Totalprix) AS 'Total'
+FROM (SELECT numcom AS 'Num', qtecde, SUM(qtecde) AS 'Totalqte', SUM(priuni) AS 'Totalprix' FROM ligcom GROUP BY numcom HAVING qtecde >= 1000 ) AS Lig
+HAVING Total > 10000
+ORDER BY Total DESC
+
+--10
+
+SELECT numcom, nomfou, datcom
+FROM entcom
+INNER JOIN fournis ON entcom.numfou = fournis.numfou
+
+--11
+
+SELECT entcom.numcom, nomfou, libart, (qtecde*priuni), obscom
+FROM produit
+INNER JOIN ligcom ON produit.codart = ligcom.codart
+INNER JOIN entcom ON ligcom.numcom = entcom.numcom
+INNER JOIN fournis ON entcom.numfou = fournis.numfou
+WHERE obscom LIKE '%urgent%'
+
+--12
+
