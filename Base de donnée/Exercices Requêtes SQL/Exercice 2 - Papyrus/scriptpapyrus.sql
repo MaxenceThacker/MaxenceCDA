@@ -69,3 +69,33 @@ WHERE obscom LIKE '%urgent%'
 
 --12
 
+SELECT fournis.nomfou, SUM(qte1+qte2+qte3) AS 'total'
+FROM vente
+INNER JOIN fournis ON vente.numfou = fournis.numfou
+GROUP BY nomfou
+HAVING total > 0
+
+--OR
+
+SELECT nomfou
+FROM fournis
+WHERE numfou IN (SELECT numfou FROM vente WHERE (qte1+qte2+qte3) > 0)
+
+--13
+
+SELECT numcom, datcom
+FROM entcom
+WHERE numfou IN (SELECT numfou FROM entcom WHERE numcom = 70210)
+
+/** ATTENTION A NE PAS REPRODUIRE **/
+
+SELECT e.numcom, e.datcom
+FROM entcom 
+INNER JOIN entcom AS e ON entcom.numfou = e.numfou
+WHERE e.numcom = 70210
+
+--14 
+
+SELECT libart, prix1
+
+
