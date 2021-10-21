@@ -45,6 +45,11 @@ SELECT Num, (Totalqte*Totalprix) AS 'Total'
 FROM (SELECT numcom AS 'Num', SUM(qtecde) AS 'Totalqte', SUM(priuni) AS 'Totalprix' FROM ligcom GROUP BY numcom) AS Lig
 ORDER BY Total DESC
 
+Select numcom, sum(priuni* qtecde) as total  from ligcom
+group by numcom
+order by total desc
+
+
 --9
 
 SELECT Num, (Totalqte*Totalprix) AS 'Total'
@@ -89,13 +94,40 @@ WHERE numfou IN (SELECT numfou FROM entcom WHERE numcom = 70210)
 
 /** ATTENTION A NE PAS REPRODUIRE **/
 
-SELECT e.numcom, e.datcom
+ e.numcom, e.datcom
 FROM entcom 
 INNER JOIN entcom AS e ON entcom.numfou = e.numfou
 WHERE e.numcom = 70210
 
 --14 
 
-SELECT libart, prix1
+SELECT DISTINCT libart, prix1 FROM vente
+INNER JOIN produit ON produit.codart = vente.codart
+WHERE prix1 < (SELECT min(prix1) FROM vente WHERE codart LIKE 'R%'); 
 
+--15
 
+SELECT nomfou,vente.codart FROM vente 
+INNER JOIN produit ON vente.codart=produit.codart
+INNER JOIN fournis ON vente.numfou=fournis.numfou  
+WHERE stkphy<=1.5*stkale 
+ORDER BY codart,nomfou
+
+--16
+
+SELECT nomfou,vente.codart FROM vente 
+INNER JOIN produit ON vente.codart=produit.codart
+INNER JOIN fournis ON vente.numfou=fournis.numfou  
+WHERE stkphy<=1.5*stkale AND delliv <= 30
+ORDER BY codart,nomfou
+
+--17
+
+SELECT fournis.numfou, vente.codart, nomfou, SUM(stkphy)
+FROM fournis
+INNER JOIN vente ON fournis.numfou = vente.numfou
+INNER JOIN produit ON vente.codart = produit.codart
+WHERE vente.delliv  < 31
+AND  stkphy  <= (stkale * 1.5)
+GROUP BY fournis.numfou, vente.codart, nomfou
+ORDER BY SUM(stkphy)  DESC
