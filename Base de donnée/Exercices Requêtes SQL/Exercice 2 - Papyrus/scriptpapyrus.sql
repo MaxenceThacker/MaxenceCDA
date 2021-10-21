@@ -131,3 +131,9 @@ WHERE vente.delliv  < 31
 AND  stkphy  <= (stkale * 1.5)
 GROUP BY fournis.numfou, vente.codart, nomfou
 ORDER BY SUM(stkphy)  DESC
+
+----------------------------------------------------------------------------------
+
+--Create view
+
+CREATE VIEW 
