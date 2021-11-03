@@ -1,0 +1,16 @@
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\bin\Debug\net5.0\boucles.exe
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\bin\Debug\net5.0\boucles.deps.json
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\bin\Debug\net5.0\boucles.runtimeconfig.json
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\bin\Debug\net5.0\boucles.runtimeconfig.dev.json
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\bin\Debug\net5.0\boucles.dll
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\bin\Debug\net5.0\ref\boucles.dll
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\bin\Debug\net5.0\boucles.pdb
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\obj\Debug\net5.0\boucles.csproj.AssemblyReference.cache
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\obj\Debug\net5.0\boucles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\obj\Debug\net5.0\boucles.AssemblyInfoInputs.cache
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\obj\Debug\net5.0\boucles.AssemblyInfo.cs
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\obj\Debug\net5.0\boucles.csproj.CoreCompileInputs.cache
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\obj\Debug\net5.0\boucles.dll
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\obj\Debug\net5.0\ref\boucles.dll
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\obj\Debug\net5.0\boucles.pdb
+C:\Users\Maxence\Documents\travailMaisonCDA\boucles\obj\Debug\net5.0\boucles.genruntimeconfig.cache
