@@ -45,18 +45,34 @@ namespace Exercice_6
             // Exercice 6,7,8 => voir correction
 
             //Exercice 9 
-            int[] t = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            int val = 0;
-                for (int i = 0; i < 9; i++)
-                {
-                    t[i] = val;
-                    t[i] = t[t.Length -1]; 
-                }
-
-
-
-
+            //int[] t = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //int val;
+            //val = t[t.Length - 1];
+            //for (int i = t.Length - 2; i >= 0; i--)
+            //{
+            //    t[i + 1] = t[i];            
+            //}
+            //t[0] = val;
+            //foreach (int a in t)
+            //{
+            //    Console.Write(a + " ");
+            //}
+            //Exercice 10
+            int[] t = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+            int temp;
+            for (int i = 0; i < (t.Length / 2); i++)
+            {
+                temp = t[i];
+                t[i] = t[t.Length - 1 - i];
+                t[t.Length - 1 - i] = temp;
             }
+            foreach (int val in t)
+            {
+                Console.Write(val + " ");
+            }
+
+
         }
+      }
     }
     
