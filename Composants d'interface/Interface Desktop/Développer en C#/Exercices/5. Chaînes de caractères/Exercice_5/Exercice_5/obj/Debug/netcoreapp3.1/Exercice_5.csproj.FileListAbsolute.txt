@@ -1,0 +1,14 @@
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\obj\Debug\netcoreapp3.1\Exercice_5.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\obj\Debug\netcoreapp3.1\Exercice_5.AssemblyInfoInputs.cache
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\obj\Debug\netcoreapp3.1\Exercice_5.AssemblyInfo.cs
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\obj\Debug\netcoreapp3.1\Exercice_5.csproj.CoreCompileInputs.cache
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\bin\Debug\netcoreapp3.1\Exercice_5.exe
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\bin\Debug\netcoreapp3.1\Exercice_5.deps.json
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\bin\Debug\netcoreapp3.1\Exercice_5.runtimeconfig.json
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\bin\Debug\netcoreapp3.1\Exercice_5.runtimeconfig.dev.json
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\bin\Debug\netcoreapp3.1\Exercice_5.dll
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\bin\Debug\netcoreapp3.1\Exercice_5.pdb
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\obj\Debug\netcoreapp3.1\Exercice_5.csproj.AssemblyReference.cache
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\obj\Debug\netcoreapp3.1\Exercice_5.dll
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\obj\Debug\netcoreapp3.1\Exercice_5.pdb
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Exercices\5. Chaînes de caractères\Exercice_5\Exercice_5\obj\Debug\netcoreapp3.1\Exercice_5.genruntimeconfig.cache

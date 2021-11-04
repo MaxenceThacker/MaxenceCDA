@@ -164,7 +164,7 @@ namespace Exercice_Calculatrice
                 switch (operateur)
                 {
                     case '!':
-                        resultat = valeur1 + valeur2;
+                        resultat = Math.Sqrt(valeur);
                         break;
                     case 'v':
                         resultat = valeur1 - valeur2;
