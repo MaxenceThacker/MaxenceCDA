@@ -1,0 +1,15 @@
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\obj\Debug\net5.0\Exercice_2.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\obj\Debug\net5.0\Exercice_2.AssemblyInfoInputs.cache
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\obj\Debug\net5.0\Exercice_2.AssemblyInfo.cs
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\obj\Debug\net5.0\Exercice_2.csproj.CoreCompileInputs.cache
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\bin\Debug\net5.0\Exercice_2.exe
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\bin\Debug\net5.0\Exercice_2.deps.json
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\bin\Debug\net5.0\Exercice_2.runtimeconfig.json
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\bin\Debug\net5.0\Exercice_2.runtimeconfig.dev.json
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\bin\Debug\net5.0\Exercice_2.dll
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\bin\Debug\net5.0\ref\Exercice_2.dll
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\bin\Debug\net5.0\Exercice_2.pdb
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\obj\Debug\net5.0\Exercice_2.dll
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\obj\Debug\net5.0\ref\Exercice_2.dll
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\obj\Debug\net5.0\Exercice_2.pdb
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\POO\2 - La classe Compte\Exercice_2\Exercice_2\obj\Debug\net5.0\Exercice_2.genruntimeconfig.cache

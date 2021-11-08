@@ -13,7 +13,7 @@ namespace Exercice_2
         public Client CompteClient { get;}
         public int Solde { get; private set; }
 
-        public Compte(Client compteClient, int solde, int compteur)
+        public Compte(Client compteClient, int solde)
         {
             CompteClient = compteClient;
             Solde = solde;
@@ -22,21 +22,34 @@ namespace Exercice_2
 
         public int Crediter(int montant)
         {
-            int montant;
-            bool conversionReussie;
-            do 
-            {
-                Console.WriteLine("Veuillez entrer la montant à créditer :");
-                conversionReussie = int.TryParse(Console.ReadLine(), out montant);
-            }while (!conversionReussie || montant != 0);
-            this.Solde += this.Solde + montant;
+            this.Solde += montant;
             return this.Solde;    
         }
 
-        public string Crediter(int Crediter, Compte Solde)
+        public int Crediter(int montant, Compte Solde)
         {
-            this.Crediter();
+            this.Crediter(montant);
+            this.Solde -= montant;
+            return this.Solde;
         }
 
+        public int Debiter(int montant)
+        {
+            this.Solde -= montant;
+            return this.Solde;
+        }
+        public int Debiter(int montant, Compte Solde)
+        {
+            this.Debiter(montant);
+            this.Solde += montant;
+            return this.Solde;
+        }
+
+        public string Resume()
+        {
+            return Client.Afficher()
+
+
+        }
     }
 }
