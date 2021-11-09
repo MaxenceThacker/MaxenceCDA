@@ -26,7 +26,7 @@ namespace Exercice_2
             return this.Solde;    
         }
 
-        public int Crediter(int montant, Compte Solde)
+        public int Crediter(int montant, Compte compte)
         {
             this.Crediter(montant);
             this.Solde -= montant;
@@ -38,7 +38,7 @@ namespace Exercice_2
             this.Solde -= montant;
             return this.Solde;
         }
-        public int Debiter(int montant, Compte Solde)
+        public int Debiter(int montant, Compte compte)
         {
             this.Debiter(montant);
             this.Solde += montant;
