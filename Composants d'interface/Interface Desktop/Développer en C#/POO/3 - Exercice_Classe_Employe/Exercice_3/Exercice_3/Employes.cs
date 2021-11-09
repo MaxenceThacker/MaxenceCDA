@@ -15,8 +15,9 @@ namespace Exercice_3
         public double SalaireBrutAnnuel { get; set; }
         public string ServiceEmploye { get; set; }
         private static int NbrEmployes { get; set; } = 0;
+        public Agences Agence { get; set; }
 
-        public Employes(string nom, string prenom, DateTime dateEmbauche, string posteEmploye, int salaireBrutAnnuel, string serviceEmploye)
+        public Employes(string nom, string prenom, DateTime dateEmbauche, string posteEmploye, int salaireBrutAnnuel, string serviceEmploye, Agences agence)
         {
             Nom = nom;
             Prenom = prenom;
@@ -24,12 +25,13 @@ namespace Exercice_3
             PosteEmploye = posteEmploye;
             SalaireBrutAnnuel = salaireBrutAnnuel;
             ServiceEmploye = serviceEmploye;
+            Agence = agence;
             NbrEmployes++;
         }
 
-        public int Anciennete(DateTime dateEmbauche)
+        public int Anciennete()
         {
-            return (int)(DateTime.Today.Subtract(dateEmbauche).TotalDays / 365);
+            return (int)(DateTime.Today.Subtract(DateTime dateEmbauche).TotalDays / 365);
         }
 
         public double PrimeAnnuel(double salaireBrutAnnuel)
@@ -72,11 +74,12 @@ namespace Exercice_3
         {
             Console.WriteLine("nombre d'employés est: " + NbrEmployes);
         }
-
-        public bool 
+        
+        public void ChequesVacance()
         {
-            
+            if (this.Anciennete() )
         }
+        
 
 
     }
