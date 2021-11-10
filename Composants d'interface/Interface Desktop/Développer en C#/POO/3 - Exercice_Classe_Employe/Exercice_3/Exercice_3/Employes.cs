@@ -16,6 +16,8 @@ namespace Exercice_3
         public string ServiceEmploye { get; set; }
         private static int NbrEmployes { get; set; } = 0;
         public Agences Agence { get; set; }
+        public List<Enfants> Enfants { get; set; }
+
 
         public Employes(string nom, string prenom, DateTime dateEmbauche, string posteEmploye, int salaireBrutAnnuel, string serviceEmploye, Agences agence)
         {
@@ -77,7 +79,14 @@ namespace Exercice_3
         
         public void ChequesVacance()
         {
-            if (this.Anciennete() )
+            if (this.Anciennete() > 1 )
+            {
+                Console.WriteLine("Cheque vacance disponible");
+            }
+            else
+            {
+                Console.WriteLine("Cheques vacances non disponible");
+            }
         }
         
 

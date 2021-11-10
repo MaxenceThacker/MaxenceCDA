@@ -12,12 +12,17 @@ namespace Exercice_3
             Employes e4 = new Employes("Cheval", "Marija", new DateTime(2001, 12, 04), "Directrice des Bêtises", 12041447, "Fun4Life");
             Employes e5 = new Employes("Serpent", "Theo", new DateTime(1999, 07, 08), "Directeur de la Sagesse", 88888888, "Fun4Life");
 
-            e1.VersementPrimeTest(e1);
+            //e1.VersementPrimeTest(e1);
 
-           //4.1 Employes.AfficherNbrEmployes();
+            //4.1 Employes.AfficherNbrEmployes();
+
+            foreach (var item in Employes.Enfants)
+            {
+
+            }
 
 
-
+           
         }
     }
 }
