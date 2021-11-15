@@ -34,23 +34,23 @@
             <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
         <TextBox Text="425.58" Grid.ColumnSpan="7" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="1" Grid.Row="3" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="1" Grid.Row="5" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="1" Grid.Row="7" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="1" Grid.Row="9" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.ColumnSpan="7" Grid.Column="1" Grid.Row="11" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="3" Grid.Row="3" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="3" Grid.Row="5" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="3" Grid.Row="7" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="3" Grid.Row="9" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="5" Grid.Row="3" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="5" Grid.Row="5" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="5" Grid.Row="7" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="5" Grid.Row="9" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="7" Grid.Row="3" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="7" Grid.Row="5" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="7" Grid.Row="7" Background="#FF8F8F8F" BorderBrush="Black"/>
-        <Button Content="Button" Grid.Column="7" Grid.Row="9" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="8" Grid.Column="3" Grid.Row="3" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="5" Grid.Column="3" Grid.Row="5" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="2" Grid.Column="3" Grid.Row="7" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="." Grid.Column="3" Grid.Row="9" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="9" Grid.Column="5" Grid.Row="3" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="6" Grid.Column="5" Grid.Row="5" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="3" Grid.Column="5" Grid.Row="7" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="/" Grid.Column="5" Grid.Row="9" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="CE" Grid.Column="7" Grid.Row="3" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="+" Grid.Column="7" Grid.Row="5" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="-" Grid.Column="7" Grid.Row="7" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="x" Grid.Column="7" Grid.Row="9" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="7" Grid.Column="1" Grid.Row="3" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="4" Grid.Column="1" Grid.Row="5" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="1" Grid.Column="1" Grid.Row="7" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="0" Grid.Column="1" Grid.Row="9" Background="#FF8F8F8F" BorderBrush="Black"/>
+        <Button Content="=" Grid.ColumnSpan="7" Grid.Column="1" Grid.Row="11" Background="#FF8F8F8F"/>
 
     </Grid>
 </Window>
