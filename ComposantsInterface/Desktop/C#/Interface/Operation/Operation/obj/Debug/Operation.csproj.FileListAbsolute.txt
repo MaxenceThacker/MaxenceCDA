@@ -1,0 +1,16 @@
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\Operation.csproj.AssemblyReference.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\MainWindow.g.cs
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\App.g.cs
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\Operation_MarkupCompile.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\Operation_MarkupCompile.lref
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\bin\Debug\Operation.exe.config
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\bin\Debug\Operation.exe
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\bin\Debug\Operation.pdb
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\MainWindow.baml
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\Operation.g.resources
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\Operation.Properties.Resources.resources
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\Operation.csproj.GenerateResource.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\Operation.csproj.CoreCompileInputs.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\Operation.exe
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\Operation.pdb
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Operation\Operation\obj\Debug\App.baml

@@ -20,9 +20,7 @@ namespace Operation
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+
     }
+
 }

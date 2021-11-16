@@ -57,6 +57,7 @@ namespace Exercice_6
             //{
             //    Console.Write(a + " ");
             //}
+
             //Exercice 10
             int[] t = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
             int temp;
