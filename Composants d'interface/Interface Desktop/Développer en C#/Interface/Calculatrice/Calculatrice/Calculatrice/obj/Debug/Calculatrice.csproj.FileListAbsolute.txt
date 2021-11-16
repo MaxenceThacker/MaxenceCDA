@@ -13,4 +13,3 @@ U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interf
 U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Calculatrice\Calculatrice\Calculatrice\obj\Debug\Calculatrice.csproj.CoreCompileInputs.cache
 U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Calculatrice\Calculatrice\Calculatrice\obj\Debug\Calculatrice.exe
 U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Calculatrice\Calculatrice\Calculatrice\obj\Debug\Calculatrice.pdb
-U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Calculatrice\Calculatrice\Calculatrice\obj\Debug\App.baml

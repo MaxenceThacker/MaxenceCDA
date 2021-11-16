@@ -25,14 +25,39 @@ namespace Calculatrice
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnNumerique_Click(object sender, RoutedEventArgs e)
         {
-
+            // sender est l'élément qui a déclenché l'événement
+            tbxResultat.Text += ((Button)sender).Content;
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void btnInit_Click(object sender, RoutedEventArgs e)
         {
-
+            tbxResultat.Text = "";
         }
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            double w = Application.Current.MainWindow.Width;
+            double h = Application.Current.MainWindow.Height;
+            btn0.FontSize = h / 20;
+            btn1.FontSize = h / 20;
+            btn2.FontSize = h / 20;
+            btn3.FontSize = h / 20;
+            btn4.FontSize = h / 20;
+            btn5.FontSize = h / 20;
+            btn6.FontSize = h / 20;
+            btn7.FontSize = h / 20;
+            btn8.FontSize = h / 20;
+            btn9.FontSize = h / 20;
+            btnAddition.FontSize = h / 20;
+            btnSoustraction.FontSize = h / 20;
+            btnDivision.FontSize = h / 20;
+            btnMultiplication.FontSize = h / 20;
+            btnInit.FontSize = h / 20;
+            btnEgal.FontSize = h / 20;
+            btnPoint.FontSize = h / 20;
+        }
+
     }
 }

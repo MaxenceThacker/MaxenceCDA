@@ -1,0 +1,15 @@
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\bin\Debug\Organisation_operation.exe.config
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\bin\Debug\Organisation_operation.exe
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\bin\Debug\Organisation_operation.pdb
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\obj\Debug\Organisation_operation.csproj.AssemblyReference.cache
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\obj\Debug\MainWindow.g.cs
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\obj\Debug\App.g.cs
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\obj\Debug\Organisation_operation_MarkupCompile.cache
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\obj\Debug\Organisation_operation_MarkupCompile.lref
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\obj\Debug\MainWindow.baml
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\obj\Debug\Organisation_operation.g.resources
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\obj\Debug\Organisation_operation.Properties.Resources.resources
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\obj\Debug\Organisation_operation.csproj.GenerateResource.cache
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\obj\Debug\Organisation_operation.csproj.CoreCompileInputs.cache
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\obj\Debug\Organisation_operation.exe
+U:\59011-07-11\Composants d'interface\Interface Desktop\Développer en C#\Interface\Organisation de l ecran de saisie d'une operation\Organisation_operation\obj\Debug\Organisation_operation.pdb

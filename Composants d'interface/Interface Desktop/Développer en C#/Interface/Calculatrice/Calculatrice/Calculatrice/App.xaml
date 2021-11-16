@@ -5,14 +5,7 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
-        <Style x:Key="BorderNoir" TargetType="Border">
-            <Setter Property="BorderBrush" Value="Black"/>
-            <Setter Property="BorderThickness" Value="2,2,0,0"/>
-        </Style>
-        <Style x:Key="BorderBlanche" TargetType="Border">
-            <Setter Property="BorderBrush" Value="White"/>
-            <Setter Property="BorderThickness" Value="0,0,2,2"/>
-        </Style>
+        
         
         
 
