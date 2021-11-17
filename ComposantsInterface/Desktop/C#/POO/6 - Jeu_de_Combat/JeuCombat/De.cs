@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JeuCombat
+namespace JeuxCombat
 {
     class De
     {
-        public static int Lancer()
+        private static Random aleatoire = new Random();
+        public static int LancerDe()
         {
-            
+            return aleatoire.Next(1, 7);
+
         }
     }
 }
