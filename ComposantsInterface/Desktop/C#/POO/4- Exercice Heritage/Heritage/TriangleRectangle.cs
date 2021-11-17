@@ -17,12 +17,12 @@ namespace Heritage
             Hauteur = hauteur;
         }
 
-        public double Perimetre()
+        public virtual double Perimetre()
         {
             return this.Base + this.Hauteur + Math.Sqrt(Math.Pow(this.Base, 2) + Math.Pow(this.Hauteur, 2));
         }
 
-        public double Aire()
+        public virtual double Aire()
         {
             return 2 / (this.Base * this.Hauteur);
         }

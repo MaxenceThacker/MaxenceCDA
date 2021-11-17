@@ -17,16 +17,16 @@ namespace Heritage
 
         public double Perimetre()
         {
-            return 2;
+            return Math.PI*(this.Diametre);
         }
 
         public double Aire()
         {
-            return 2 / (this.Base * this.Hauteur);
+            return Math.PI*Math.Pow((this.Diametre/2), 2);
         }
-        public string AfficherTriangle()
+        public string AfficherCercle()
         {
-            return "Base : " + this.Base + "- Hauteur : " + this.Hauteur + "- Périmètre : " + this.Perimetre() + "- Aire : " + this.Aire();
+            return "Diamètre : " + this.Diametre + "- Périmètre : " + this.Perimetre() + "- Aire : " + this.Aire();
         }
     }
 }

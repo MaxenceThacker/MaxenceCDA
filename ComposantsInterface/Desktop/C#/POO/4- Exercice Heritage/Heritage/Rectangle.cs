@@ -17,12 +17,12 @@ namespace Heritage
             Largeur = largeur;
         }
 
-        public double Perimetre()
+        public virtual double Perimetre()
         {
             return 2 * (this.Longueur + this.Largeur);
         }
         
-        public double Aire()
+        public virtual double Aire()
         {
             return this.Longueur * this.Largeur;
         }
@@ -40,7 +40,7 @@ namespace Heritage
             return this.EstCarre() ? "Ce rectangle est un carré" : "Ce rectangle n'est pas un carré";
         }
 
-        public string AfficherRectangle()
+        public virtual string AfficherRectangle()
         {
             return "Longueur : " + this.Longueur + "- Largeur : " + this.Largeur + "- Périmètre : " + this.Perimetre() + "- Aire : " + this.Aire() + this.ToStringCarre();
         }
