@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace JeuxCombat
+namespace JeuxCombats
 {
     class Program
     {

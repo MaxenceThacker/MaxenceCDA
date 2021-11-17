@@ -1,0 +1,16 @@
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\bin\Debug\net5.0\JeuCombats.exe
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\bin\Debug\net5.0\JeuCombats.deps.json
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\bin\Debug\net5.0\JeuCombats.runtimeconfig.json
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\bin\Debug\net5.0\JeuCombats.runtimeconfig.dev.json
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\bin\Debug\net5.0\JeuCombats.dll
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\bin\Debug\net5.0\ref\JeuCombats.dll
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\bin\Debug\net5.0\JeuCombats.pdb
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\obj\Debug\net5.0\JeuCombats.csproj.AssemblyReference.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\obj\Debug\net5.0\JeuCombats.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\obj\Debug\net5.0\JeuCombats.AssemblyInfoInputs.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\obj\Debug\net5.0\JeuCombats.AssemblyInfo.cs
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\obj\Debug\net5.0\JeuCombats.csproj.CoreCompileInputs.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\obj\Debug\net5.0\JeuCombats.dll
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\obj\Debug\net5.0\ref\JeuCombats.dll
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\obj\Debug\net5.0\JeuCombats.pdb
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\6 - Jeu_de_Combat\JeuCombat\obj\Debug\net5.0\JeuCombats.genruntimeconfig.cache

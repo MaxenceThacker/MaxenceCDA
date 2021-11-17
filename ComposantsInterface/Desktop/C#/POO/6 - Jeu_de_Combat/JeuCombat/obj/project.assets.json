@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "U:\\59011-07-11\\ComposantsInterface\\Desktop\\C#\\POO\\6 - Jeu_de_Combat\\JeuCombat\\JeuCombat.csproj",
-      "projectName": "JeuCombat",
-      "projectPath": "U:\\59011-07-11\\ComposantsInterface\\Desktop\\C#\\POO\\6 - Jeu_de_Combat\\JeuCombat\\JeuCombat.csproj",
+      "projectUniqueName": "U:\\59011-07-11\\ComposantsInterface\\Desktop\\C#\\POO\\6 - Jeu_de_Combat\\JeuCombat\\JeuCombats.csproj",
+      "projectName": "JeuCombats",
+      "projectPath": "U:\\59011-07-11\\ComposantsInterface\\Desktop\\C#\\POO\\6 - Jeu_de_Combat\\JeuCombat\\JeuCombats.csproj",
       "packagesPath": "C:\\Users\\59011-07-11\\.nuget\\packages\\",
       "outputPath": "U:\\59011-07-11\\ComposantsInterface\\Desktop\\C#\\POO\\6 - Jeu_de_Combat\\JeuCombat\\obj\\",
       "projectStyle": "PackageReference",
