@@ -1,0 +1,5 @@
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\4- Exercice Heritage\Heritage\obj\Debug\net5.0\Heritage.csproj.AssemblyReference.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\4- Exercice Heritage\Heritage\obj\Debug\net5.0\Heritage.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\4- Exercice Heritage\Heritage\obj\Debug\net5.0\Heritage.AssemblyInfoInputs.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\4- Exercice Heritage\Heritage\obj\Debug\net5.0\Heritage.AssemblyInfo.cs
+U:\59011-07-11\ComposantsInterface\Desktop\C#\POO\4- Exercice Heritage\Heritage\obj\Debug\net5.0\Heritage.csproj.CoreCompileInputs.cache
