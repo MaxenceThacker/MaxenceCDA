@@ -44,7 +44,7 @@ namespace Gestion_de_produits
         private string LireFichier()
         // Renvoi un tableau de chaine contenant les informations stockées dans le fichier 
         {
-            string chaine ;
+            string chaine;
             try
             {
                 // Lecture et stockage dans chaine
@@ -67,9 +67,53 @@ namespace Gestion_de_produits
             return liste;
         }
 
-        private void listeProduits_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void btn_Ajouter_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void btn_Modifier_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Supprimer_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Dupliquer_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Vider_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btn_ListeCategories_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_ListeRayons_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnNvFenetre_Click(object sender, RoutedEventArgs e)
+        {
+            Fenetres f = new Fenetres(new Produits(12, "Melon", 1), this); ;
+            this.Opacity = 0.7;
+            this.Visibility = Visibility.Hidden;
+            f.ShowDialog();
+
+            this.Visibility = Visibility.Visible;
+            this.Opacity = 1;
+
+        }
+        public void MAJRetour(string valeur)
+        {
+            this.btn_Ajouter.Content = valeur;
         }
     }
 }

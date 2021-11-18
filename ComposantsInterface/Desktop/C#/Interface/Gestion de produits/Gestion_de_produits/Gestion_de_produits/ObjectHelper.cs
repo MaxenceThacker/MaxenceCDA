@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Datasource
+namespace Gestion_de_produits
 {
     static class ObjectHelper
     {

@@ -32,7 +32,7 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="10*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btn1" Content="Ajouter" >
+            <Button x:Name="btn_Ajouter" Content="Ajouter" Click="btn_Ajouter_Click" >
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Cyan"/>
@@ -41,7 +41,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="btn2" Content="Modifier" Grid.Column="2">
+            <Button x:Name="btn_Modifier" Content="Modifier" Grid.Column="2" Click="btn_Modifier_Click">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Cyan"/>
@@ -50,7 +50,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="btn3" Content="Supprimer" Grid.Column="4">
+            <Button x:Name="btn_Supprimer" Content="Supprimer" Grid.Column="4" Click="btn_Supprimer_Click">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Cyan"/>
@@ -59,7 +59,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="btn4" Content="Dupliquer" Grid.Column="6">
+            <Button x:Name="btn_Dupliquer" Content="Dupliquer" Grid.Column="6" Click="btn_Dupliquer_Click">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Cyan"/>
@@ -68,7 +68,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="btn5" Content="Vider" Grid.Column="8" Margin="1,0,0,0">
+            <Button x:Name="btn_Vider" Content="Vider" Grid.Column="8" Click="btn_Vider_Click">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Cyan"/>
@@ -78,7 +78,7 @@
                 </Button.Background>
             </Button>
         </Grid>
-        <DataGrid x:Name="listeProduits" Grid.Row="2" Grid.Column="1" AutoGenerateColumns = "False" ScrollViewer.VerticalScrollBarVisibility="Visible" SelectionChanged="listeProduits_SelectionChanged" >
+        <DataGrid x:Name="listeProduits" Grid.Row="2" Grid.Column="1"  AutoGenerateColumns = "False" ScrollViewer.VerticalScrollBarVisibility="Visible" >
             <DataGrid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF5B5757" Offset="0"/>
@@ -86,9 +86,9 @@
                 </LinearGradientBrush>
             </DataGrid.Background>
             <DataGrid.Columns>
-                <DataGridTextColumn Header = "IdProduit" Width="1*"/>
-                <DataGridTextColumn Header = "LibelleProduit" Width="5*"/>
-                <DataGridTextColumn Header = "Quantite" Width="2*"/>
+                <DataGridTextColumn Header = "IdProduit" Width="1*" Binding="{Binding IdProduit}"/>
+                <DataGridTextColumn Header = "LibelleProduit" Width="5*" Binding="{Binding LibelleProduit}"/>
+                <DataGridTextColumn Header = "Quantite" Width="2*" Binding="{Binding Quantite}"/>
             </DataGrid.Columns>
         </DataGrid>
         <Grid Grid.Column="1" Grid.Row="4">
@@ -97,7 +97,7 @@
                 <ColumnDefinition Width="10*"/>
                 <ColumnDefinition Width="45*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btn6" Content="Liste des catégories">
+            <Button x:Name="btn_ListeCategories" Content="Liste des catégories" Click="btn_ListeCategories_Click" >
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                         <GradientStop Color="Cyan"/>
@@ -106,7 +106,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="btn7" Content="Liste des rayons" Grid.Column="2">
+            <Button x:Name="btn_ListeRayons" Content="Liste des rayons" Grid.Column="2" Click="btn_ListeRayons_Click">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Cyan"/>

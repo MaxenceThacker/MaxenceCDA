@@ -1,72 +1,72 @@
 [
   {
     "IdProduit": 1,
-    "LibelleProduit": "Produit1",
+    "LibelleProduit": "Banane",
     "Quantite": 2
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit2",
+    "IdProduit": 2,
+    "LibelleProduit": "Cornichon",
     "Quantite": 4
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit3",
+    "IdProduit": 3,
+    "LibelleProduit": "Paté",
     "Quantite": 6
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit4",
+    "IdProduit": 4,
+    "LibelleProduit": "Courgette",
     "Quantite": 8
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit5",
+    "IdProduit": 5,
+    "LibelleProduit": "Limonade",
     "Quantite": 10
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit6",
+    "IdProduit": 6,
+    "LibelleProduit": "Graisse de Canard",
     "Quantite": 12
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit7",
+    "IdProduit": 7,
+    "LibelleProduit": "Pâte fraiche",
     "Quantite": 14
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit8",
+    "IdProduit": 8,
+    "LibelleProduit": "Crème liquide",
     "Quantite": 16
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit9",
+    "IdProduit": 9,
+    "LibelleProduit": "Saumon",
     "Quantite": 18
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit10",
+    "IdProduit": 10,
+    "LibelleProduit": "Lait",
     "Quantite": 20
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit11",
+    "IdProduit": 11,
+    "LibelleProduit": "Pain",
     "Quantite": 22
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit12",
+    "IdProduit": 12,
+    "LibelleProduit": "Café",
     "Quantite": 24
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit13",
+    "IdProduit": 13,
+    "LibelleProduit": "Saussisson",
     "Quantite": 26
   },
   {
-    "IdProduit": 1,
-    "LibelleProduit": "Produit14",
+    "IdProduit": 14,
+    "LibelleProduit": "Brocoli",
     "Quantite": 28
   }
 ]
