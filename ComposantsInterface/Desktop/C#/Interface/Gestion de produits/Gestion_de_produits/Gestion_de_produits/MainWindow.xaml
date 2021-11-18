@@ -78,7 +78,7 @@
                 </Button.Background>
             </Button>
         </Grid>
-        <DataGrid Grid.Row="2" Grid.Column="1" AutoGenerateColumns = "False" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+        <DataGrid x:Name="listeProduits" Grid.Row="2" Grid.Column="1" AutoGenerateColumns = "False" ScrollViewer.VerticalScrollBarVisibility="Visible" SelectionChanged="listeProduits_SelectionChanged" >
             <DataGrid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF5B5757" Offset="0"/>
@@ -86,11 +86,10 @@
                 </LinearGradientBrush>
             </DataGrid.Background>
             <DataGrid.Columns>
-                <DataGridTextColumn Header = "Name" Width="1*"/>
+                <DataGridTextColumn Header = "IdProduit" Width="1*"/>
                 <DataGridTextColumn Header = "LibelleProduit" Width="5*"/>
-                <DataGridTextColumn Header = "Catégories" Width="2*"/>
-                <DataGridTextColumn Header = "Rayons" Width="*"/>
-             </DataGrid.Columns>
+                <DataGridTextColumn Header = "Quantite" Width="2*"/>
+            </DataGrid.Columns>
         </DataGrid>
         <Grid Grid.Column="1" Grid.Row="4">
             <Grid.ColumnDefinitions>
