@@ -1,0 +1,15 @@
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\bin\Debug\Fiche_Produit.exe.config
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\bin\Debug\Fiche_Produit.exe
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\bin\Debug\Fiche_Produit.pdb
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\obj\Debug\Fiche_Produit.csproj.AssemblyReference.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\obj\Debug\MainWindow.g.cs
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\obj\Debug\App.g.cs
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\obj\Debug\Fiche_Produit_MarkupCompile.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\obj\Debug\Fiche_Produit_MarkupCompile.lref
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\obj\Debug\MainWindow.baml
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\obj\Debug\Fiche_Produit.g.resources
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\obj\Debug\Fiche_Produit.Properties.Resources.resources
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\obj\Debug\Fiche_Produit.csproj.GenerateResource.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\obj\Debug\Fiche_Produit.csproj.CoreCompileInputs.cache
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\obj\Debug\Fiche_Produit.exe
+U:\59011-07-11\ComposantsInterface\Desktop\C#\Interface\Amazon\Fiche_Produit\obj\Debug\Fiche_Produit.pdb
