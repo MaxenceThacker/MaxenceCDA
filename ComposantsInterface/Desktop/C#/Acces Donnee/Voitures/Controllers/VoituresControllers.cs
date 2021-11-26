@@ -28,27 +28,27 @@ namespace Voitures.Controllers
 
         //GET api/Voitures
         [HttpGet]
-        public ActionResult<IEnumerable<VoituresDtos>> GetAllVoitures()
+        public ActionResult<IEnumerable<VoituresDtosIn>> GetAllVoitures()
         {
             IEnumerable<Voiture> listeVoitures = _service.GetAllVoitures();
-            return Ok(_mapper.Map<IEnumerable<VoituresDtos>>(listeVoitures));
+            return Ok(_mapper.Map<IEnumerable<VoituresDtosIn>>(listeVoitures));
         }
 
         //GET api/Voitures/{i}
         [HttpGet("{id}", Name = "GetVoituresById")]
-        public ActionResult<VoituresDtos> GetVoituresById(int id)
+        public ActionResult<VoituresDtosIn> GetVoituresById(int id)
         {
             Voiture commandItem = _service.GetVoitureById(id);
             if (commandItem != null)
             {
-                return Ok(_mapper.Map<VoituresDtos>(commandItem));
+                return Ok(_mapper.Map<VoituresDtosIn>(commandItem));
             }
             return NotFound();
         }
 
         //POST api/Voitures
         [HttpPost]
-        public ActionResult<VoituresDtos> CreateVoitures(Voiture obj)
+        public ActionResult<VoituresDtosIn> CreateVoitures(Voiture obj)
         {
             _service.AddVoitures(obj);
             return CreatedAtRoute(nameof(GetVoituresById), new { Id = obj.IdVoiture }, obj);
@@ -56,7 +56,7 @@ namespace Voitures.Controllers
 
         //POST api/Voitures/{id}
         [HttpPut("{id}")]
-        public ActionResult UpdateVoitures(int id, VoituresDtos obj)
+        public ActionResult UpdateVoitures(int id, VoituresDtosIn obj)
         {
             Voiture objFromRepo = _service.GetVoitureById(id);
             if (objFromRepo == null)

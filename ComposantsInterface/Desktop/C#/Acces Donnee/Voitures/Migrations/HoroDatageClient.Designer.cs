@@ -9,7 +9,7 @@ namespace Voitures.Migrations
 {
     [DbContext(typeof(MyDbContext))]
     [Migration("20211124154645_Client")]
-    partial class Client
+    partial class HoroDatageClient
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

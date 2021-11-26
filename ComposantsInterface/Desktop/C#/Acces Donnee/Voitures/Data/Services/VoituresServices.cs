@@ -36,7 +36,7 @@ namespace Voitures.Data.Services
 
         public IEnumerable<Voiture> GetAllVoitures()
         {
-            return _context.Voitures.ToList();
+           var liste = (f) ;
         }
 
         public Voiture GetVoitureById(int id)

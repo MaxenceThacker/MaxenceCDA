@@ -12,8 +12,8 @@ namespace Voitures.Data.Profiles
     {
         public VoituresProfiles()
         {
-            CreateMap<Voiture, VoituresDtos>();
-            CreateMap<VoituresDtos, Voiture>();
+            CreateMap<Voiture, VoituresDtosIn>();
+            CreateMap<VoituresDtosIn, Voiture>();
         }
     }
 }

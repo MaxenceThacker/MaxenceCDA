@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient.Memcached;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -13,6 +14,8 @@ namespace Voitures.Data.Models
         public string Marque { get; set; }
         public string Modele { get; set; }
         public string Couleur { get; set; }
+        public int IdClient { get; set; }
+        public Client Clt { get; set; }
     }
 }
 

@@ -16,24 +16,22 @@ namespace Voitures.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.12");
 
-            modelBuilder.Entity("Voitures.Data.Models.Voiture", b =>
+            modelBuilder.Entity("Voitures.Data.Models.Client", b =>
                 {
-                    b.Property<int>("IdVoiture")
+                    b.Property<int>("IdClient")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Couleur")
+                    b.Property<string>("Nom")
                         .HasColumnType("text");
 
-                    b.Property<string>("Marque")
+                    b.Property<string>("Prenom")
                         .HasColumnType("text");
 
-                    b.Property<string>("Modele")
-                        .HasColumnType("text");
 
-                    b.HasKey("IdVoiture");
+                    b.HasKey("IdClient");
 
-                    b.ToTable("Voitures");
+                    b.ToTable("Client");
                 });
 #pragma warning restore 612, 618
         }
