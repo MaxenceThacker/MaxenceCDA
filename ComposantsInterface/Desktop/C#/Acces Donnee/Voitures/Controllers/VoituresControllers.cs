@@ -28,10 +28,10 @@ namespace Voitures.Controllers
 
         //GET api/Voitures
         [HttpGet]
-        public ActionResult<IEnumerable<VoituresDtosIn>> GetAllVoitures()
+        public ActionResult<IEnumerable<VoituresDtosOut>> GetAllVoitures()
         {
             IEnumerable<Voiture> listeVoitures = _service.GetAllVoitures();
-            return Ok(_mapper.Map<IEnumerable<VoituresDtosIn>>(listeVoitures));
+            return Ok(_mapper.Map<IEnumerable<VoituresDtosOut>>(listeVoitures));
         }
 
         //GET api/Voitures/{i}
@@ -48,10 +48,10 @@ namespace Voitures.Controllers
 
         //POST api/Voitures
         [HttpPost]
-        public ActionResult<VoituresDtosIn> CreateVoitures(Voiture obj)
+        public ActionResult<VoituresDtosIn> CreateVoitures(VoituresDtosIn obj)
         {
-            _service.AddVoitures(obj);
-            return CreatedAtRoute(nameof(GetVoituresById), new { Id = obj.IdVoiture }, obj);
+            _service.AddVoitures(_mapper.Map<Voiture>(obj));
+            return CreatedAtRoute(nameof(GetVoituresById), new { id = obj.IdVoiture }, obj);
         }
 
         //POST api/Voitures/{id}

@@ -8,10 +8,11 @@ namespace Voitures.Data.Dtos
 {
     public class VoituresDtosIn
     {
+        public int IdVoiture { get; set; }
         public string Modele { get; set; }
         public string Marque { get; set; }
         public string Couleur { get; set; }
-        public List<ClientsDtosOut> ListIdClient { get; set; } 
+        public int IdClient { get; set; }
     }
 
 }

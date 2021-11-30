@@ -7,6 +7,7 @@ namespace Voitures.Data.Dtos
 {
     public class ClientsDtosOut
     {
-        public int IdClient { get; set; }
+        public string Nom { get; set; }
+        public string Prenom { get; set; }
     }
 }
