@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercice_2
 {
-    class Compte
+    public class Compte
     {
         static int compteur;
 
@@ -45,11 +45,5 @@ namespace Exercice_2
             return this.Solde;
         }
 
-        public string Resume()
-        {
-            return Client.Afficher()
-
-
-        }
     }
 }
