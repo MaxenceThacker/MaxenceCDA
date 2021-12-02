@@ -127,7 +127,7 @@ namespace Exercice_2_Test
             int soldeActuel1 = client1.Solde;
             int soldeActuel2 = client1.Solde;
             Assert.AreEqual(attendu1, soldeActuel1, 0.001, "Compte mal Credité");
-            Assert.AreEqual(attendu1, soldeActuel2, 0.001, "Compte mal Débité");
+            Assert.AreEqual(attendu2, soldeActuel2, 0.001, "Compte mal Débité");
         }
 
         [Test]
