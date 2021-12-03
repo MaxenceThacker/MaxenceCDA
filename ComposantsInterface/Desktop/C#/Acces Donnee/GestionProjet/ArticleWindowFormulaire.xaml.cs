@@ -21,7 +21,9 @@ namespace GestionProjet
     {
         public ArticleWindowFormulaire()
         {
-            InitializeComponent();
+            ArticleWindowFormulaire w1 = new ArticleWindowFormulaire();
+
+            Nullable<bool> dialogResult = w1.ShowDialog();
         }
     }
 }

@@ -25,8 +25,7 @@ namespace GestionProjet
         }
         private void Btn_Ajouter_Click(object sender, RoutedEventArgs e)
         {
-            ArticleWindowFormulaire w1 = new ArticleWindowFormulaire();
-            Nullable<bool> dialogResult = ArticleWindow.ShowDialog();
+            this.DialogResult = true;
         }
 
         private void Btn_Modifier_Click(object sender, RoutedEventArgs e)

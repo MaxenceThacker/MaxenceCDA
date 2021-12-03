@@ -4,8 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionProjet"
+        StartupUri="ArticleWindow.xaml"
         mc:Ignorable="d"
         Title="ArticleWindow" Height="450" Width="800">
+
+    <Application.ArticleWindow>
+            <NavigationWindow Source="MainPage.xaml" Visibility="Visible"></NavigationWindow>
+        </Application.ArticleWindow>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
