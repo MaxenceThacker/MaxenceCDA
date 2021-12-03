@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 U:\59011-07-11\ComposantsInterface\Desktop\C#\Acces Donnee\GestionProjet\App.xaml
-3310257627
+3-1519048218
 
-182015242869
+231823922265
 338962104924
-Windows\ArticleWindow.xaml;Windows\CategoryWindow.xaml;Windows\TypeWindow.xaml;
+ArticleWindow.xaml;ArticleWindowFormulaire.xaml;MainWindow.xaml;
 
 False
 

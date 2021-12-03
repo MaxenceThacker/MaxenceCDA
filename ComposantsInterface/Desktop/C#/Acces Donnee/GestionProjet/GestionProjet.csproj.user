@@ -7,24 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Windows\ArticleWindow.xaml.cs">
+    <Compile Update="ArticleWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\CategoryWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Windows\TypeWindow.xaml.cs">
+    <Compile Update="ArticleWindowFormulaire.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Windows\ArticleWindow.xaml">
+    <Page Update="ArticleWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\CategoryWindow.xaml">
+    <Page Update="ArticleWindowFormulaire.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\TypeWindow.xaml">
+    <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

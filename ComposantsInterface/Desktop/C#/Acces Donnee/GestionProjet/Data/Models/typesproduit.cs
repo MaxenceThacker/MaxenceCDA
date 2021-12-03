@@ -5,16 +5,16 @@ using System.Collections.Generic;
 
 namespace GestionProjet.Data.Models
 {
-    public partial class typesproduit
+    public partial class Typesproduit
     {
-        public typesproduit()
+        public Typesproduit()
         {
-            categories = new HashSet<category>();
+            Categories = new HashSet<Category>();
         }
 
         public int IdTypesProduits { get; set; }
         public string LibelleTypeProduit { get; set; }
 
-        public virtual ICollection<category> categories { get; set; }
+        public virtual ICollection<Category> Categories { get; set; }
     }
 }

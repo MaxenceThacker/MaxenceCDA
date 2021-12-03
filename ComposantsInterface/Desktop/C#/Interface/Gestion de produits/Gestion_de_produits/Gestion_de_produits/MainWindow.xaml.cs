@@ -100,7 +100,7 @@ namespace Gestion_de_produits
         {
 
         }
-        private void btnNvFenetre_Click(object sender, RoutedEventArgs e)
+        private void btnNvFenetre_Click (object sender, RoutedEventArgs e)
         {
             Fenetres f = new Fenetres(new Produits(12, "Melon", 1), this); ;
             this.Opacity = 0.7;

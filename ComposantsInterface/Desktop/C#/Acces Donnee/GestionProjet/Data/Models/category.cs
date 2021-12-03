@@ -5,18 +5,18 @@ using System.Collections.Generic;
 
 namespace GestionProjet.Data.Models
 {
-    public partial class category
+    public partial class Category
     {
-        public category()
+        public Category()
         {
-            articles = new HashSet<article>();
+            Articles = new HashSet<Article>();
         }
 
         public int IdCategories { get; set; }
         public string LibelleCategorie { get; set; }
         public int IdTypesProduits { get; set; }
 
-        public virtual typesproduit IdTypesProduitsNavigation { get; set; }
-        public virtual ICollection<article> articles { get; set; }
+        public virtual Typesproduit Typesproduit { get; set; }
+        public virtual ICollection<Article> Articles { get; set; }
     }
 }
