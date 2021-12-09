@@ -18,26 +18,26 @@ namespace Filrouge.Data
         {
         }
 
-        public virtual DbSet<Adress> Adresses { get; set; }
-        public virtual DbSet<Approvisionnement> Approvisionnements { get; set; }
-        public virtual DbSet<Categoriesclient> Categoriesclients { get; set; }
-        public virtual DbSet<Client> Clients { get; set; }
-        public virtual DbSet<Commande> Commandes { get; set; }
+        public virtual DbSet<Adresses> Adresses { get; set; }
+        public virtual DbSet<Approvisionnements> Approvisionnements { get; set; }
+        public virtual DbSet<Categoriesclients> Categoriesclients { get; set; }
+        public virtual DbSet<Clients> Clients { get; set; }
+        public virtual DbSet<Commandes> Commandes { get; set; }
         public virtual DbSet<Etatscommande> Etatscommandes { get; set; }
-        public virtual DbSet<Facture> Factures { get; set; }
-        public virtual DbSet<Fournisseur> Fournisseurs { get; set; }
+        public virtual DbSet<Factures> Factures { get; set; }
+        public virtual DbSet<Fournisseurs> Fournisseurs { get; set; }
         public virtual DbSet<Historiquetva> Historiquetvas { get; set; }
         public virtual DbSet<Lignescommande> Lignescommandes { get; set; }
-        public virtual DbSet<Livraison> Livraisons { get; set; }
-        public virtual DbSet<Pay> Pays { get; set; }
-        public virtual DbSet<Produit> Produits { get; set; }
+        public virtual DbSet<Livraisons> Livraisons { get; set; }
+        public virtual DbSet<Pays> Pays { get; set; }
+        public virtual DbSet<Produits> Produits { get; set; }
         public virtual DbSet<Progressionscommande> Progressionscommandes { get; set; }
-        public virtual DbSet<Reglement> Reglements { get; set; }
-        public virtual DbSet<Role> Roles { get; set; }
-        public virtual DbSet<Rubrique> Rubriques { get; set; }
+        public virtual DbSet<Reglements> Reglements { get; set; }
+        public virtual DbSet<Roles> Roles { get; set; }
+        public virtual DbSet<Rubriques> Rubriques { get; set; }
         public virtual DbSet<Tva> Tvas { get; set; }
-        public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<Ville> Villes { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<Villes> Villes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -50,7 +50,7 @@ namespace Filrouge.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Adress>(entity =>
+            modelBuilder.Entity<Adresses>(entity =>
             {
                 entity.HasKey(e => e.IdAdresse)
                     .HasName("PRIMARY");
@@ -91,7 +91,7 @@ namespace Filrouge.Data
                     .HasColumnName("telMobile");
             });
 
-            modelBuilder.Entity<Approvisionnement>(entity =>
+            modelBuilder.Entity<Approvisionnements>(entity =>
             {
                 entity.HasKey(e => e.IdApprovisionnement)
                     .HasName("PRIMARY");
@@ -114,7 +114,7 @@ namespace Filrouge.Data
                     .HasColumnName("refFournisseur");
             });
 
-            modelBuilder.Entity<Categoriesclient>(entity =>
+            modelBuilder.Entity<Categoriesclients>(entity =>
             {
                 entity.HasKey(e => e.IdCategorieClient)
                     .HasName("PRIMARY");
@@ -138,7 +138,7 @@ namespace Filrouge.Data
                     .HasColumnName("libelleCategClient");
             });
 
-            modelBuilder.Entity<Client>(entity =>
+            modelBuilder.Entity<Clients>(entity =>
             {
                 entity.HasKey(e => e.IdUser)
                     .HasName("PRIMARY");
@@ -164,7 +164,7 @@ namespace Filrouge.Data
                     .HasColumnName("refClient");
             });
 
-            modelBuilder.Entity<Commande>(entity =>
+            modelBuilder.Entity<Commandes>(entity =>
             {
                 entity.HasKey(e => e.IdCommande)
                     .HasName("PRIMARY");
@@ -206,7 +206,7 @@ namespace Filrouge.Data
                     .HasColumnName("libelleEtatCommande");
             });
 
-            modelBuilder.Entity<Facture>(entity =>
+            modelBuilder.Entity<Factures>(entity =>
             {
                 entity.HasKey(e => e.IdFacture)
                     .HasName("PRIMARY");
@@ -232,7 +232,7 @@ namespace Filrouge.Data
                     .HasColumnName("montantPaiement");
             });
 
-            modelBuilder.Entity<Fournisseur>(entity =>
+            modelBuilder.Entity<Fournisseurs>(entity =>
             {
                 entity.HasKey(e => e.IdFournisseur)
                     .HasName("PRIMARY");
@@ -295,7 +295,7 @@ namespace Filrouge.Data
                     .HasColumnName("quantiteProduit");
             });
 
-            modelBuilder.Entity<Livraison>(entity =>
+            modelBuilder.Entity<Livraisons>(entity =>
             {
                 entity.HasKey(e => e.IdLivraison)
                     .HasName("PRIMARY");
@@ -321,7 +321,7 @@ namespace Filrouge.Data
                     .HasColumnName("quantiteLivraison");
             });
 
-            modelBuilder.Entity<Pay>(entity =>
+            modelBuilder.Entity<Pays>(entity =>
             {
                 entity.HasKey(e => e.IdPays)
                     .HasName("PRIMARY");
@@ -339,7 +339,7 @@ namespace Filrouge.Data
                     .HasColumnName("nomPays");
             });
 
-            modelBuilder.Entity<Produit>(entity =>
+            modelBuilder.Entity<Produits>(entity =>
             {
                 entity.HasKey(e => e.IdProduit)
                     .HasName("PRIMARY");
@@ -404,7 +404,7 @@ namespace Filrouge.Data
                 entity.Property(e => e.IdEtatCommande).HasColumnType("int(11)");
             });
 
-            modelBuilder.Entity<Reglement>(entity =>
+            modelBuilder.Entity<Reglements>(entity =>
             {
                 entity.HasKey(e => e.IdReglement)
                     .HasName("PRIMARY");
@@ -419,7 +419,7 @@ namespace Filrouge.Data
                     .HasColumnName("typePaiement");
             });
 
-            modelBuilder.Entity<Role>(entity =>
+            modelBuilder.Entity<Roles>(entity =>
             {
                 entity.HasKey(e => e.IdRole)
                     .HasName("PRIMARY");
@@ -433,7 +433,7 @@ namespace Filrouge.Data
                     .HasColumnName("libelleRole");
             });
 
-            modelBuilder.Entity<Rubrique>(entity =>
+            modelBuilder.Entity<Rubriques>(entity =>
             {
                 entity.HasKey(e => e.IdRubrique)
                     .HasName("PRIMARY");
@@ -474,7 +474,7 @@ namespace Filrouge.Data
                     .HasColumnName("tauxTVA");
             });
 
-            modelBuilder.Entity<User>(entity =>
+            modelBuilder.Entity<Users>(entity =>
             {
                 entity.HasKey(e => e.IdUser)
                     .HasName("PRIMARY");
@@ -516,7 +516,7 @@ namespace Filrouge.Data
                     .HasConstraintName("FK_User_Roles");
             });
 
-            modelBuilder.Entity<Ville>(entity =>
+            modelBuilder.Entity<Villes>(entity =>
             {
                 entity.HasKey(e => e.IdVille)
                     .HasName("PRIMARY");

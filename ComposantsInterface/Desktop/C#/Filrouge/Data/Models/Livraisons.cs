@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Filrouge.Data.Models
 {
-    public partial class Livraison
+    public partial class Livraisons
     {
         public int IdLivraison { get; set; }
         public int? IdCommande { get; set; }

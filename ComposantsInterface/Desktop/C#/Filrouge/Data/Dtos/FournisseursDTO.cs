@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Filrouge.Data.Dtos
 {
-    public class FournisseurDTOIn
+    public class FournisseursDTOIn
     {
         public string NomFournisseur { get; set; }
     }
 
-    public class FournisseurDTOOut
+    public class FournisseursDTOOut
     {
         public int IdFournisseur { get; set; }
         public string NomFournisseur { get; set; }

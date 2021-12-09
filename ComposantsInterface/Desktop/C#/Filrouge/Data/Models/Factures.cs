@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Filrouge.Data.Models
 {
-    public partial class Facture
+    public partial class Factures
     {
         public int IdFacture { get; set; }
         public int? IdReglement { get; set; }

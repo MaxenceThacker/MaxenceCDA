@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace Filrouge.Data.Dtos
 {
-    public class RubriqueDTOIn
+    public class RubriquesDTOIn
     {
         public string LibelleRubrique { get; set; }
         public int IdRubriqueMere { get; set; }
     }
 
-    public class RubriqueRubriqueMereDTOOut
+    public class RubriquesRubriquesMereDTOOut
     {
         public int IdRubrique { get; set; }
         public string LibelleRubrique { get; set; }
         public int IdRubriqueMere { get; set; }
     }
 
-    public class RubriqueDTOOut
+    public class RubriquesDTOOut
     {
         public int IdRubrique { get; set; }
         public string LibelleRubrique { get; set; }

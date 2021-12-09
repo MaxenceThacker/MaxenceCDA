@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Filrouge.Data.Models
 {
-    public partial class Adress
+    public partial class Adresses
     {
         public int IdAdresse { get; set; }
         public string EmailAdresse { get; set; }

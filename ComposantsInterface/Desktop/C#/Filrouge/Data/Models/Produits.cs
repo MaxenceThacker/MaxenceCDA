@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Filrouge.Data.Models
 {
-    public partial class Produit
+    public partial class Produits
     {
         public int IdProduit { get; set; }
         public string LibelleProduit { get; set; }

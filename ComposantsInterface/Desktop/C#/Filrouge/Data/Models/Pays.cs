@@ -5,16 +5,16 @@ using System.Collections.Generic;
 
 namespace Filrouge.Data.Models
 {
-    public partial class Pay
+    public partial class Pays
     {
-        public Pay()
+        public Pays()
         {
-            Villes = new HashSet<Ville>();
+            Villes = new HashSet<Villes>();
         }
 
         public int IdPays { get; set; }
         public string NomPays { get; set; }
 
-        public virtual ICollection<Ville> Villes { get; set; }
+        public virtual ICollection<Villes> Villes { get; set; }
     }
 }

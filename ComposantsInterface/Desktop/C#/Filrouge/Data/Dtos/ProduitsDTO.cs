@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Filrouge.Data.Dtos
 {
-    public class ProduitDTOIn
+    public class ProduitsDTOIn
     {
         public string LibelleProduit { get; set; }
         public string Description { get; set; }
@@ -17,7 +17,7 @@ namespace Filrouge.Data.Dtos
         public int IdRubrique { get; set; }
     }
 
-    public class ProduitDTOOut
+    public class ProduitsDTOOut
     {
         public int IdProduit { get; set; }
         public string LibelleProduit { get; set; }

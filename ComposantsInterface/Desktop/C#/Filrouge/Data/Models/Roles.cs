@@ -5,16 +5,16 @@ using System.Collections.Generic;
 
 namespace Filrouge.Data.Models
 {
-    public partial class Role
+    public partial class Roles
     {
-        public Role()
+        public Roles()
         {
-            Users = new HashSet<User>();
+            Users = new HashSet<Users>();
         }
 
         public int IdRole { get; set; }
         public string LibelleRole { get; set; }
 
-        public virtual ICollection<User> Users { get; set; }
+        public virtual ICollection<Users> Users { get; set; }
     }
 }

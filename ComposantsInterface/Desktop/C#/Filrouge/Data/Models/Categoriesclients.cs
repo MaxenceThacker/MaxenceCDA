@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Filrouge.Data.Models
 {
-    public partial class Categoriesclient
+    public partial class Categoriesclients
     {
         public int IdCategorieClient { get; set; }
         public string LibelleCategClient { get; set; }

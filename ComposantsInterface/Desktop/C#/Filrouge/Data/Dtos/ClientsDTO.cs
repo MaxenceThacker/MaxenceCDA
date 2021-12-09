@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Filrouge.Data.Dtos
 {
-    public class ClientDTOIn
+    public class ClientsDTOIn
     {
         public int IdUser { get; set; }
         public string RefClient { get; set; }
@@ -14,7 +14,7 @@ namespace Filrouge.Data.Dtos
         public int IdCategorieClient { get; set; }
     }
 
-    public class ClientDTOOut
+    public class ClientsDTOOut
     {
         public int IdUser { get; set; }
         public string RefClient { get; set; }

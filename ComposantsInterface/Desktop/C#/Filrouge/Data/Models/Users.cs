@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Filrouge.Data.Models
 {
-    public partial class User
+    public partial class Users
     {
         public int IdUser { get; set; }
         public string NomUser { get; set; }
@@ -14,6 +14,6 @@ namespace Filrouge.Data.Models
         public string MdpUser { get; set; }
         public int IdRole { get; set; }
 
-        public virtual Role IdRoleNavigation { get; set; }
+        public virtual Roles IdRoleNavigation { get; set; }
     }
 }

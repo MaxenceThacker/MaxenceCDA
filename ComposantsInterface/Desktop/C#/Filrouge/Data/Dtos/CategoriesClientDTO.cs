@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Filrouge.Data.Dtos
 {
-    public class CategorieClientDTOIn
+    public class CategoriesClientDTOIn
     {
         public string LibelleCategClient { get; set; }
         public string InfoReglement { get; set; }
         public int CoefCategClient { get; set; }
     }
 
-    public class CategorieClientDTOOut
+    public class CategoriesClientDTOOut
     {
         public int IdCategorieClient { get; set; }
         public string LibelleCategClient { get; set; }
