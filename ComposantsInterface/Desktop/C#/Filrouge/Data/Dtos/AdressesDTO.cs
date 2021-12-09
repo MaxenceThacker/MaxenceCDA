@@ -28,6 +28,8 @@ namespace Filrouge.Data.Dtos
         public string Province { get; set; }
         public string ComplementAdresse { get; set; }
         public int IdVille { get; set; }
+        public string LibelleVille { get; set; }
+        public string CodePostal { get; set; }
         public int IdPays { get; set; }
         public string NomPays { get; set; }
     }
