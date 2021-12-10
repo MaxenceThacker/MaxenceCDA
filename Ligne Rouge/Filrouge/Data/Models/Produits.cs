@@ -15,6 +15,6 @@ namespace Filrouge.Data.Models
         public string Photo { get; set; }
         public int Stock { get; set; }
         public int IdRubrique { get; set; }
-        public Rubriques Rubrique { get; set; }
+        public virtual Rubriques Rubrique { get; set; }
     }
 }

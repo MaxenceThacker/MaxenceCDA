@@ -15,5 +15,7 @@ namespace Filrouge.Data.Models
         public string Province { get; set; }
         public string ComplementAdresse { get; set; }
         public int IdVille { get; set; }
+        public virtual Villes Villes { get; set; }
+        public virtual Pays Pays { get; set; }
     }
 }

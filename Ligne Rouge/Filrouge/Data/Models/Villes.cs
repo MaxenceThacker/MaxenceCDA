@@ -12,6 +12,6 @@ namespace Filrouge.Data.Models
         public string CodePostal { get; set; }
         public int IdPays { get; set; }
 
-        public virtual Pays IdPaysNavigation { get; set; }
+        public virtual Pays Pays { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Filrouge.Data.Models
 {
-    public partial class Tva
+    public partial class TVA
     {
         public int IdTva { get; set; }
         public int? TauxTva { get; set; }

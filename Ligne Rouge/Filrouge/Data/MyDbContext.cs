@@ -35,7 +35,7 @@ namespace Filrouge.Data
         public virtual DbSet<Reglements> Reglements { get; set; }
         public virtual DbSet<Roles> Roles { get; set; }
         public virtual DbSet<Rubriques> Rubriques { get; set; }
-        public virtual DbSet<Tva> Tvas { get; set; }
+        public virtual DbSet<TVA> TVAs { get; set; }
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<Villes> Villes { get; set; }
 
@@ -458,7 +458,7 @@ namespace Filrouge.Data
                     .HasConstraintName("FK_Rubriques_RubriqueMere");
             });
 
-            modelBuilder.Entity<Tva>(entity =>
+            modelBuilder.Entity<TVA>(entity =>
             {
                 entity.HasKey(e => e.IdTva)
                     .HasName("PRIMARY");
