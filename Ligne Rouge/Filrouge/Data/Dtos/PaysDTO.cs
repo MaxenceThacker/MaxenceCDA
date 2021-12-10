@@ -11,7 +11,7 @@ namespace Filrouge.Data.Dtos
         public string NomPays { get; set; }
     }
 
-    public class PaysDTOout
+    public class PaysDTOOut
     {
         public int IdPays { get; set; }
         public string NomPays { get; set; }
