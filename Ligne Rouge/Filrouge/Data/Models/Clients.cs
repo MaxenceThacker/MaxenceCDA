@@ -11,5 +11,6 @@ namespace Filrouge.Data.Models
         public string RefClient { get; set; }
         public int CoefClient { get; set; }
         public int IdCategorieClient { get; set; }
+        public CategoriesClient CategoriesClient { get; set; }
     }
 }

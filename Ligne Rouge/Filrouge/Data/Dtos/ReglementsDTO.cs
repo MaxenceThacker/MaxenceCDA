@@ -11,7 +11,7 @@ namespace Filrouge.Data.Dtos
         public string TypePaiement { get; set; }
     }
 
-    public class ReglementsDTOout
+    public class ReglementsDTOOut
     {
         public int IdReglement { get; set; }
         public string TypePaiement { get; set; }
