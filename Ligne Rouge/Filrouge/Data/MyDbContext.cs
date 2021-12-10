@@ -20,7 +20,7 @@ namespace Filrouge.Data
 
         public virtual DbSet<Adresses> Adresses { get; set; }
         public virtual DbSet<Approvisionnements> Approvisionnements { get; set; }
-        public virtual DbSet<Categoriesclients> Categoriesclients { get; set; }
+        public virtual DbSet<CategoriesClient> CategoriesClients { get; set; }
         public virtual DbSet<Clients> Clients { get; set; }
         public virtual DbSet<Commandes> Commandes { get; set; }
         public virtual DbSet<EtatsCommande> EtatsCommandes { get; set; }
@@ -114,7 +114,7 @@ namespace Filrouge.Data
                     .HasColumnName("refFournisseur");
             });
 
-            modelBuilder.Entity<Categoriesclients>(entity =>
+            modelBuilder.Entity<CategoriesClient>(entity =>
             {
                 entity.HasKey(e => e.IdCategorieClient)
                     .HasName("PRIMARY");
