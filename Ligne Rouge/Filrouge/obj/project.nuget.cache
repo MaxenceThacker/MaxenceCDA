@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4KXbpv3wsO/gKpjtKjPgjyLaOshk0lvQPNOx/tzhvhNA96HJlQvEMMqUCfZWFzEFi5eazguaRXVcVRb25AHk/Q==",
+  "dgSpecHash": "Mmfmd3/zM1PXTK9KkME9HN2fqd9Ekf4LSG4q+eU0TICZW7JjR9skeTzTpEOm386FdIilXT1tWlqAWpARS30p8A==",
   "success": true,
-  "projectFilePath": "U:\\59011-07-11\\ComposantsInterface\\Desktop\\C#\\Filrouge\\Filrouge.csproj",
+  "projectFilePath": "U:\\59011-07-11\\Ligne Rouge\\Filrouge\\Filrouge.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\59011-07-11\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\59011-07-11\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

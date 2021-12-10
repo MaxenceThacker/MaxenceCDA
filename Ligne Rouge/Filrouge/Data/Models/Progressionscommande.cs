@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Filrouge.Data.Models
 {
-    public partial class Progressionscommande
+    public partial class ProgressionsCommande
     {
         public int IdProgressionsCommande { get; set; }
         public int? IdCommande { get; set; }

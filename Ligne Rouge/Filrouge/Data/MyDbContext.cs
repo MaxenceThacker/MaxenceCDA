@@ -23,15 +23,15 @@ namespace Filrouge.Data
         public virtual DbSet<Categoriesclients> Categoriesclients { get; set; }
         public virtual DbSet<Clients> Clients { get; set; }
         public virtual DbSet<Commandes> Commandes { get; set; }
-        public virtual DbSet<Etatscommande> Etatscommandes { get; set; }
+        public virtual DbSet<EtatsCommande> EtatsCommandes { get; set; }
         public virtual DbSet<Factures> Factures { get; set; }
         public virtual DbSet<Fournisseurs> Fournisseurs { get; set; }
         public virtual DbSet<Historiquetva> Historiquetvas { get; set; }
-        public virtual DbSet<Lignescommande> Lignescommandes { get; set; }
+        public virtual DbSet<LignesCommande> LignesCommandes { get; set; }
         public virtual DbSet<Livraisons> Livraisons { get; set; }
         public virtual DbSet<Pays> Pays { get; set; }
         public virtual DbSet<Produits> Produits { get; set; }
-        public virtual DbSet<Progressionscommande> Progressionscommandes { get; set; }
+        public virtual DbSet<ProgressionsCommande> ProgressionsCommandes { get; set; }
         public virtual DbSet<Reglements> Reglements { get; set; }
         public virtual DbSet<Roles> Roles { get; set; }
         public virtual DbSet<Rubriques> Rubriques { get; set; }
@@ -191,7 +191,7 @@ namespace Filrouge.Data
                 entity.Property(e => e.NumeroCommande).HasMaxLength(10);
             });
 
-            modelBuilder.Entity<Etatscommande>(entity =>
+            modelBuilder.Entity<EtatsCommande>(entity =>
             {
                 entity.HasKey(e => e.IdEtatCommande)
                     .HasName("PRIMARY");
@@ -273,7 +273,7 @@ namespace Filrouge.Data
                     .HasColumnName("IdTVA");
             });
 
-            modelBuilder.Entity<Lignescommande>(entity =>
+            modelBuilder.Entity<LignesCommande>(entity =>
             {
                 entity.HasKey(e => e.IdLigneCommande)
                     .HasName("PRIMARY");
@@ -382,7 +382,7 @@ namespace Filrouge.Data
                     .HasColumnName("stock");
             });
 
-            modelBuilder.Entity<Progressionscommande>(entity =>
+            modelBuilder.Entity<ProgressionsCommande>(entity =>
             {
                 entity.HasKey(e => e.IdProgressionsCommande)
                     .HasName("PRIMARY");

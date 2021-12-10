@@ -2067,11 +2067,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "U:\\59011-07-11\\ComposantsInterface\\Desktop\\C#\\Filrouge\\Filrouge.csproj",
+      "projectUniqueName": "U:\\59011-07-11\\Ligne Rouge\\Filrouge\\Filrouge.csproj",
       "projectName": "Filrouge",
-      "projectPath": "U:\\59011-07-11\\ComposantsInterface\\Desktop\\C#\\Filrouge\\Filrouge.csproj",
+      "projectPath": "U:\\59011-07-11\\Ligne Rouge\\Filrouge\\Filrouge.csproj",
       "packagesPath": "C:\\Users\\59011-07-11\\.nuget\\packages\\",
-      "outputPath": "U:\\59011-07-11\\ComposantsInterface\\Desktop\\C#\\Filrouge\\obj\\",
+      "outputPath": "U:\\59011-07-11\\Ligne Rouge\\Filrouge\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Filrouge.Data.Models
 {
-    public partial class Etatscommande
+    public partial class EtatsCommande
     {
         public int IdEtatCommande { get; set; }
         public string LibelleEtatCommande { get; set; }
