@@ -14,6 +14,6 @@ namespace Filrouge.Data.Models
         public string MdpUser { get; set; }
         public int IdRole { get; set; }
 
-        public virtual Roles IdRoleNavigation { get; set; }
+        public virtual Roles Roles { get; set; }
     }
 }
