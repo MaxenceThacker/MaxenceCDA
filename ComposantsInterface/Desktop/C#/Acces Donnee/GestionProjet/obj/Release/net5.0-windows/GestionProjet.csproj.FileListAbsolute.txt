@@ -3,3 +3,4 @@ C:\Users\Maxence\Desktop\MaxenceCDA\ComposantsInterface\Desktop\C#\Acces Donnee\
 C:\Users\Maxence\Desktop\MaxenceCDA\ComposantsInterface\Desktop\C#\Acces Donnee\GestionProjet\obj\Release\net5.0-windows\App.g.cs
 C:\Users\Maxence\Desktop\MaxenceCDA\ComposantsInterface\Desktop\C#\Acces Donnee\GestionProjet\obj\Release\net5.0-windows\GestionProjet_MarkupCompile.cache
 C:\Users\Maxence\Desktop\MaxenceCDA\ComposantsInterface\Desktop\C#\Acces Donnee\GestionProjet\obj\Release\net5.0-windows\GestionProjet_MarkupCompile.lref
+C:\Users\Maxence\Desktop\MaxenceCDA\ComposantsInterface\Desktop\C#\Acces Donnee\GestionProjet\obj\Release\net5.0-windows\GestionProjet.csproj.AssemblyReference.cache

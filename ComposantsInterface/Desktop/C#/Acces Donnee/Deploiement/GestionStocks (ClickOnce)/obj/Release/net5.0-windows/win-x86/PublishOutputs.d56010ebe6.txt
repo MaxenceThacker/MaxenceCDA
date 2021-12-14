@@ -1,0 +1,2 @@
+C:\Users\Maxence\Desktop\MaxenceCDA\ComposantsInterface\Desktop\C#\Acces Donnee\Deploiement\GestionStocks\bin\publish\GestionStocks.pdb
+C:\Users\Maxence\Desktop\MaxenceCDA\ComposantsInterface\Desktop\C#\Acces Donnee\Deploiement\GestionStocks\bin\publish\GestionStocks.exe

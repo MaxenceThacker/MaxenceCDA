@@ -53,7 +53,7 @@ namespace GestionProjet {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestionProjet;V1.0.0.0;component/articlewindowformulaire.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestionProjet;component/articlewindowformulaire.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ArticleWindowFormulaire.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

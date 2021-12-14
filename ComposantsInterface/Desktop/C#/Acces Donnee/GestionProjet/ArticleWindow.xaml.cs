@@ -21,7 +21,7 @@ namespace GestionProjet
     {
         public ArticleWindow()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
         private void Btn_Ajouter_Click(object sender, RoutedEventArgs e)
         {
