@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionCantine", "GestionCantine.csproj", "{1FBD8A7D-9905-4E4E-A36E-E4B5214CD998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrairyClassInstaller", "LibrairyClassInstaller\LibrairyClassInstaller.csproj", "{F465498F-4684-4851-A98C-0C30222944A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibrairyClassInstaller", "LibrairyClassInstaller\LibrairyClassInstaller.csproj", "{F465498F-4684-4851-A98C-0C30222944A7}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{29F38503-8D8C-4639-93A5-C8FCCABBED79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,8 @@ Global
 		{F465498F-4684-4851-A98C-0C30222944A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F465498F-4684-4851-A98C-0C30222944A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F465498F-4684-4851-A98C-0C30222944A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F38503-8D8C-4639-93A5-C8FCCABBED79}.Debug|Any CPU.ActiveCfg = Debug
+		{29F38503-8D8C-4639-93A5-C8FCCABBED79}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

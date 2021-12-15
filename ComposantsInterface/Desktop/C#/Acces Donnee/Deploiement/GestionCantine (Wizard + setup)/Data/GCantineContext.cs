@@ -9,8 +9,15 @@ namespace GestionCantine.Data
 {
     public partial class GCantineContext : DbContext
     {
+        public string Connexion { get; set; }
+
         public GCantineContext()
         {
+        }
+
+        public GCantineContext(DatabaseConnection connectionObject)
+        {
+            this.Connexion = "server=" + connectionObject.Server + ";user=" + connectionObject.User + ";password=" + connectionObject.Password + ";database=" + connectionObject.Database + ";port=" + connectionObject.Port + ";ssl mode=" + connectionObject.SSL;
         }
 
         public GCantineContext(DbContextOptions<GCantineContext> options)
