@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-html, body, header, main, nav, section, footer, div, html{
+html, body, header, main, nav, section, footer, div, html, h1{
     display: flex;
     flex: 1;
 }
@@ -15,10 +15,6 @@ body {
 .center {
     justify-content: center;
     align-items: center;
-}
-
-.row {
-    flex-direction: row;
 }
 
 .colonne {
@@ -42,7 +38,7 @@ body {
 }
 
 .crepe {
-    flex: 0.1;
+    flex: 0.03;
 }
 
 .borderBlack{
@@ -75,10 +71,11 @@ body {
 }
 
 @font-face {
-    font-family: "Child";
-    src: url("/font/ChildWriting-Regular.ttf") format("tff");
+    font-family: "ChildWriting-Regular";
+    src: url("/font/ChildWriting-Regular.ttf") format("truetype");
 }
 
 #titre {
-    font-family: Child;
+    font-family: ChildWriting-Regular;
+    font-size: 3em;
 }
