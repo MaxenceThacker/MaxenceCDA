@@ -1,86 +1,95 @@
 @font-face {
-    font-family: "ChildWriting-Regular";
-    src: url("/font/ChildWriting-Regular.ttf") format("truetype");
+  font-family: "ChildWriting-Regular";
+  src: url("/font/ChildWriting-Regular.ttf") format("truetype");
 }
 
 * {
-    font-family: ChildWriting-Regular;
-    margin: 0;
-    padding: 0;
+  font-family: ChildWriting-Regular;
+  margin: 0;
+  padding: 0;
 }
 
-html, body, header, main, nav, section, footer, div, html, h1, img{
-    display: flex;
-    flex: 1;
+html,
+body,
+header,
+main,
+nav,
+section,
+footer,
+div,
+html,
+h1,
+img {
+  display: flex;
+  flex: 1;
 }
 
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .center {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .colonne {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .double {
-    flex: 2;
+  flex: 2;
 }
 
 .triple {
-    flex: 3;
+  flex: 3;
 }
 
-.demi{
-    flex:0.5;
+.demi {
+  flex: 0.5;
 }
 
 .mini {
-    flex: 0.2;
+  flex: 0.2;
 }
 
 .crepe {
-    flex: 0.03;
+  flex: 0.03;
 }
 
-.borderBlack{
-    border: 3px solid black;
-    padding: 0.2em;
+.borderBlack {
+  border: 3px solid black;
+  padding: 0.2em;
 }
 
 .bg-color-sea {
-    background-color: #20b2aa;
+  background-color: #20b2aa;
 }
 
 .bg-color-reb {
-    background-color: rebeccapurple;
+  background-color: rebeccapurple;
 }
 
 .bg-color-lightblue {
-    background-color: hsl(195, 53%, 79%);
+  background-color: hsl(195, 53%, 79%);
 }
 
 .bg-color-lightpink {
-    background-color: rgb(255, 182, 193);
+  background-color: rgb(255, 182, 193);
 }
 
 .bg-color-lightyellow {
-    background-color: lightyellow;
+  background-color: lightyellow;
 }
 
 .bg-color-lightsalmon {
-    background-color: lightsalmon;
+  background-color: lightsalmon;
 }
 
 #titre {
-
-    font-size: 3em;
+  font-size: 3em;
 }
