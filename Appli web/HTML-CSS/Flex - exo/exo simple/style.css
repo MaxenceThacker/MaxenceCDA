@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, header, main, nav, section, footer, div, html{
+    display: flex;
+    flex: 1;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.colonne {
+    flex-direction: column;
+}
+
+.double {
+    flex: 2;
+}
+
+.triple {
+    flex: 3;
+}
+
+.demi{
+    flex:0.5;
+}
+
+body {
+    height: 100vh;
+}
+
+.mini {
+    flex: 0.2;
+}
+
+.bg-color-sea {
+    background-color: #20b2aa;
+}
+
+.bg-color-reb {
+    background-color: rebeccapurple;
+}
+
+.bg-color-lightblue {
+    background-color: hsl(195, 53%, 79%);
+}
+
+.bg-color-lightpink {
+    background-color: rgb(255, 182, 193);
+}
+
+.bg-color-lightyellow {
+    background-color: lightyellow;
+}
+
+.bg-color-lightsalmon {
+    background-color: lightsalmon;
+}
+
