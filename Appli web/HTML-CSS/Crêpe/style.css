@@ -1,15 +1,25 @@
+@font-face {
+    font-family: "ChildWriting-Regular";
+    src: url("/font/ChildWriting-Regular.ttf") format("truetype");
+}
+
 * {
+    font-family: ChildWriting-Regular;
     margin: 0;
     padding: 0;
 }
 
-html, body, header, main, nav, section, footer, div, html, h1{
+html, body, header, main, nav, section, footer, div, html, h1, img{
     display: flex;
     flex: 1;
 }
 
 body {
     height: 100vh;
+}
+
+img {
+    width: 100%;
 }
 
 .center {
@@ -70,12 +80,7 @@ body {
     background-color: lightsalmon;
 }
 
-@font-face {
-    font-family: "ChildWriting-Regular";
-    src: url("/font/ChildWriting-Regular.ttf") format("truetype");
-}
-
 #titre {
-    font-family: ChildWriting-Regular;
+
     font-size: 3em;
 }
