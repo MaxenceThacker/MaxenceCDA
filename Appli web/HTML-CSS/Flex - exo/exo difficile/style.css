@@ -8,6 +8,10 @@ html, body, header, main, nav, section, footer, div, html{
     flex: 1;
 }
 
+body {
+    height: 100vh;
+}
+
 .center {
     justify-content: center;
     align-items: center;
@@ -31,10 +35,6 @@ html, body, header, main, nav, section, footer, div, html{
 
 .demi{
     flex:0.5;
-}
-
-body {
-    height: 100vh;
 }
 
 .mini {
