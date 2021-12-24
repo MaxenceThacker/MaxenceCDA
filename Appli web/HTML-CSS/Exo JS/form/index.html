@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formmulaire</title>
+</head>
+
+<body class="colonne">
+    <header>Header</header>
+    <div class="espace"></div>
+    <main>
+        <div class="colonne">
+            <form action="" method="post" id="logform">
+                <div></div>
+                <div></div>
+                <div></div>
+                
+                <label for="nom">Nom* :</label>
+                            <input type="text" id="nom" name="nom" placeholder="nom" required/>
+                            <span id="noNom"></span> 
+
+                <label for="prenom">Prénom* :</label>
+                            <input type="text" id="prenom" name="prenom" placeholder="prénom" required/>
+                            <span id="noPrenom"></span>
+
+                <label for="ddn">Date de naissance* : </label>
+                            <input type="date" name="ddn" id="ddn" required>
+                            <span id="noDate"></span>
+
+                <label for="adresse">Adresse* :</label>
+                            <input type="text" id="adresse" name="adresse" placeholder="adresse" required/>
+                            <span id="noAdresse"></span>
+
+                <label for="cp">Code postal* :</label>
+                            <input type="text" id="cp" name="cp" placeholder="code postal" required/>
+                            <span id="noCP"></span>
+
+                <label for="ville">Ville* :</label>
+                            <input type="text" id="ville" name="ville" placeholder="ville" required/>
+                            <span id="noVille"></span>
+
+                <label for="Email">Email* :</label>
+                            <input type="text" id="Email" name="Email" placeholder="exemple@exemple.fr" required/>
+                            <span id="noPays"></span>
+
+                
+                <div></div>
+                <div></div>
+                <div></div>
+
+                <div></div>
+                <input type="submit" name="submit" value="Valider" /> 
+                <input type="reset" name="cancel" value="Annuler" />
+
+                <div></div>
+            </form>
+        </div>
+    </main>
+    <div class="espace"></div>
+    <footer>Footer</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

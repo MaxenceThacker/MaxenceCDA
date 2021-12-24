@@ -1,0 +1,98 @@
+:root {
+  --bgc1: #93cbff;
+  --bgc2: #f7accf;
+  --font: #489cd8;
+  --bgc3: #fcf5c7;
+  --bgc4: #adf7b6;
+  --font2:#dd745a;
+  --font3:#e2a494;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--font);
+}
+
+div,
+header,
+main,
+nav,
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body {
+  background-color: var(--bgc1);
+}
+header {
+  align-self: flex-start;
+  background-color: var(--bgc4);
+}
+
+footer {
+  align-self: flex-end;
+  background-color: var(--bgc4);
+}
+
+main {
+  background-color: var(--bgc2);
+}
+
+img,
+video {
+  width: 100%;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.colonne {
+  flex-direction: column;
+}
+
+.double {
+  flex: 2;
+}
+
+.triple {
+  flex: 3;
+}
+
+.demi {
+  flex: 0.5;
+}
+
+.mini {
+  flex: 0.2;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  grid-auto-rows: minmax(1em, auto);
+}
+
+.espace {
+  flex: none;
+  height: 2vh;
+}
+
+.miniEspace {
+  flex: none;
+  height: 1vh;
+}
+
+.red {
+  color: var(--font2);
+}
+
+.orange {
+  color: var(--font3);
+}
+
+

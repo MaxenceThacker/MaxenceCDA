@@ -13,7 +13,6 @@ for (let i = 0; i < t.length; i++) {
 }
 
 
-
 function changet() {
     for (let i = 0; i < t.length; i++) {
 
