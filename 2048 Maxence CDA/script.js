@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Generer un nombre aléatoir avec math floor
     function generateRandom() {
-        let nombreRandom = Math.floor(Math.random() * grilles.length);
+        let nombreRandom = Math.floor(Math.random() * grilles.length); //ICI on va essayer de ne pas utiliser de fonction recursive car en fin de jeu le nombre de boucle sera trop conséquent par rapport au nombre de case disponible, 
+        //on va donc essayer de recuper le nombre de case disponible c:
         if (grilles[nombreRandom].innerHTML == 0) {
             grilles[nombreRandom].innerHTML = 2;
         }else generateRandom();
