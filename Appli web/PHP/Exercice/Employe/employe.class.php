@@ -1,5 +1,5 @@
 <?php
-require 
+ 
 class Employe
 {
 
@@ -37,9 +37,9 @@ class Employe
         return $this->_dateEmbauche;
     }
 
-    public function setDateEmbauche($dateEmbauche)
+    public function setDateEmbauche(DateTime $dateEmbauche)
     {
-        $this->_dateEmbauche = strtoUpper($dateEmbauche);
+        $this->_dateEmbauche = $dateEmbauche;
     }
 
     public function getPoste()
@@ -49,7 +49,7 @@ class Employe
 
     public function setPoste($poste)
     {
-        $this->_poste = strtoUpper($poste);
+        $this->_poste = $poste;
     }
 
     public function getSalaire()
@@ -59,7 +59,7 @@ class Employe
 
     public function setSalaire($salaire)
     {
-        $this->_salaire = strtoUpper($salaire);
+        $this->_salaire = $salaire;
     }
 
     public function getService()
@@ -69,7 +69,7 @@ class Employe
 
     public function setService($service)
     {
-        $this->_service = strtoUpper($service);
+        $this->_service = $service;
     }
     /*****************Constructeur***************** */
 
@@ -93,27 +93,27 @@ class Employe
     }
 
     /*****************Autres Méthodes***************** */
+    public function toString()
+    {
+        $aff = "Nom :" . $this->getNom() . "\nPrenom :" . $this->getPrenom() . "\nDateEmbauche :" . $this->getDateEmbauche()->format('Y-m-d') . "\nPoste :" . $this->getPoste() . "\nSalaire annuel :" . $this->getSalaire() . "€\nService :" . $this->getService() . "\n";
+        return $aff;
+    }
 
     public function calculeAnciennete() 
     {
         $dateNow = new DateTime("now");
         $interval = $dateNow->diff($this->getDateEmbauche(), true);
-        
-        if ($interval > 365) 
-        {
-            return $interval->format('%y année(s)')*1;
-        } else 
-            return $interval->format('%m mois et %a jour(s)')*1;
+        return $interval->format('%y')*1; 
     }
     
-    public function calculePrimeAnnuel()
+    private function calculePrimeAnnuel()
     {
         return $this->getSalaire() * 0.5;
     }
 
-    public function calculePrimeAnciennete()
+    private function calculePrimeAnciennete()
     {
-        return $this->getSalaire() * 0.02 * this->calculeAnciennete();
+        return $this->getSalaire() * 0.02 * $this->calculeAnciennete();
     }
 
     public function calculePrimeTotal()
@@ -127,9 +127,10 @@ class Employe
         $dateVersement = (new DateTime())->setDate($dateNow->format('Y'), 11, 30);
         if ($dateVersement < $dateNow) 
         {
-            return "Le versement transferé par la banque pour " . $this->getNom()." " . $this->getPrenom(). " d'un montant de " .$this->calculePrimeTotal(). ".";
+            return `Le versement transferé par la banque pour ${$this->getNom()} ${$this->getPrenom()} d'un montant de ${$this->calculePrimeTotal()}.`;
         }
 
         
     }
 }
+?>
