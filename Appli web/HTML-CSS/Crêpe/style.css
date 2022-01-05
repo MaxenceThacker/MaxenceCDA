@@ -9,7 +9,6 @@
   padding: 0;
 }
 
-html,
 body,
 header,
 main,
@@ -18,15 +17,14 @@ section,
 footer,
 div,
 html,
-h1,
-img {
+article {
   display: flex;
   flex: 1;
 }
 
-body {
+/* body {
   height: 100vh;
-}
+} */
 
 img {
   width: 100%;

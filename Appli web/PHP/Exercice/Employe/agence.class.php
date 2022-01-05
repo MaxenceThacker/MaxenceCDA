@@ -88,14 +88,8 @@ class Agence
    
     public function toString()
     {
-        return "Nom :" . $this->getNom() . "\nAdresse :" . $this->getAdresse()."\nCode postal : " . $this->getCodePostal()."\nVille : " . $this->getVille(). "\nRestauration :" . $this->getRestauration();
+        return "Nom :" . $this->getNom() . "\nAdresse :" . $this->getAdresse()."\nCode postal : " . $this->getCodePostal()."\nVille : " . $this->getVille(). "\nRestauration :" . $this->getModeRestauration();
 
-    }
-
-   
-    public function equalsTo($obj)
-    {
-        return true;
     }
      
 }

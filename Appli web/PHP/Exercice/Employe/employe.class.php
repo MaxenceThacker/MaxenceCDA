@@ -1,5 +1,7 @@
 <?php
- 
+
+ require "enfant.class.php";
+
 class Employe
 {
 
@@ -10,6 +12,8 @@ class Employe
     private $_poste;
     private $_salaire;
     private $_service;
+    private $_agence;
+    private $_enfant = [];
 
     /*****************Accesseurs***************** */
     public function getNom()
@@ -71,6 +75,21 @@ class Employe
     {
         $this->_service = $service;
     }
+
+    public function setAgence(Agence $agence)
+    {
+        $this->_agence = $agence;
+    }
+
+    public function getEnfants()
+    {
+        return $this->_enfants;
+    }
+
+    public function setEnfants(array $enfants)
+    {
+        $this->_enfants = $enfants;
+    }
     /*****************Constructeur***************** */
 
     public function __construct(array $options = [])
@@ -95,7 +114,18 @@ class Employe
     /*****************Autres Méthodes***************** */
     public function toString()
     {
-        $aff = "Nom :" . $this->getNom() . "\nPrenom :" . $this->getPrenom() . "\nDateEmbauche :" . $this->getDateEmbauche()->format('Y-m-d') . "\nPoste :" . $this->getPoste() . "\nSalaire annuel :" . $this->getSalaire() . "€\nService :" . $this->getService() . "\n";
+        $aff = "Nom :" . $this->getNom() . "\nPrenom :" . $this->getPrenom() . "\nDateEmbauche :" . $this->getDateEmbauche()->format('Y-m-d') . "\nPoste :" . $this->getPoste() . "\nSalaire annuel :" . $this->getSalaire() . "€\nService :" . $this->getService() . "\nAgence" . $this->getAgence()->toString().".\n";
+        if (count($this->getEnfants()) > 0)
+        {
+            foreach ($this->getEnfants() as $enfant)
+            {
+                $aff .= $enfant->toString();
+            }
+        }
+        else
+        {
+            $aff .= "Pas d'enfant";
+        }
         return $aff;
     }
 
@@ -132,5 +162,90 @@ class Employe
 
         
     }
+
+    public static function compareToNomPrenom($obj1, $obj2)
+    {
+        if ($obj1->getNom() < $obj2->getNom()) {
+            return -1;
+        } else if ($obj1->getNom() > $obj2->getNom()) {
+            return 1;
+        } else if ($obj1->getPrenom() < $obj2->getPrenom()) {
+            return -1;
+        } else if ($obj1->getPrenom() > $obj2->getPrenom()) {
+            return 1;
+        }
+        return 0;
+    }
+
+    public static function compareToServiceNomPrenom($obj1, $obj2)
+    {
+        if ($obj1->getService() < $obj2->getService())
+        {
+            return -1;
+        }
+        else if ($obj1->getService() > $obj2->getService())
+        {
+            return 1;
+        }
+        else
+        {
+            return self::compareToNomPrenom($obj1, $obj2);
+        }
+
+    }
+
+    function masseSalariale()
+    {
+        return $this->getSalaireAnnuel()+$this->primeAnnuelle();
+    }
+
+    public function recoitChequeVacances()
+    {
+        if (this->calculeAnciennete() > 1) 
+        {
+            return true;
+        }else return false;
+    }
+
+    public function recoitChequeNoel() 
+    {
+        public string chequeNoel()
+        {
+            $nbrCheque = array("20" => "0", "30" => "0", "50" => "0"); 
+            $reponse = "";
+            foreach ($this->getEnfants() as $enfants)
+            {
+                switch ($enfants->chequeNoelEnfant())
+                {
+                    case 20: $nbrCheque[0]++; 
+                    break;
+                    case 30: $nbrCheque[1]++; 
+                    break;
+                    case 50: $nbrCheque[2]++; 
+                    break;
+                    default: 
+                    break;
+                }
+
+            }
+            if ($this->$nbrCheque->array_sum() == 0)  
+                return "Pas de droit aux chèques Noel";
+            }
+            if ($nbrCheque[0] > 0) 
+            {
+                $reponse += $nbrCheque[0] + " chèque(s) de 20\n";
+            }     
+            if ($nbrCheque[1] > 0)
+            {
+                $reponse += $nbrCheque[1] + " chèque(s) de 30\n";
+            } 
+            if ($nbrCheque[2] > 0) 
+            {
+                $reponse += $nbrCheque[2] + " chèque(s) de 50\n";
+            } 
+            return reponse;
+        }
 }
+    
+
 ?>
