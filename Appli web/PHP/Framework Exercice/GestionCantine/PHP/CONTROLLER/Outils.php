@@ -47,8 +47,7 @@ function AfficherPage($page)
  */
 function texte($codetexte)
 {
-    global $lang; //on appel la variable globale
-    return TexteManager::findByCodes($lang, $codetexte);
+    return TexteManager::findByCodes($_SESSION['lang'], $codetexte);
 }
 
 function crypte($mot) //fonction qui crypte le mot de passe

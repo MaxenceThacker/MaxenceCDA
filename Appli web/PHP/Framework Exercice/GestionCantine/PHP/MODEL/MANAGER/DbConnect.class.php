@@ -1,7 +1,5 @@
 <?php
 
-// Ce fichier sera inclus � chaque fois que l'on aura besoin d'acceder � la base de donn�es.
-// Il permet d'ouvrir la connection � la base de donn�es
 class DbConnect
 {
     private static $db;

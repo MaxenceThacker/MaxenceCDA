@@ -6,7 +6,7 @@ class Categories
 	/*****************Attributs***************** */
 
 	private $_idCategorie;
-	private $_LibelleCategorie;
+	private $_libelleCategorie;
 
 	/***************** Accesseurs ***************** */
 
@@ -23,12 +23,12 @@ class Categories
 
 	public function getLibelleCategorie()
 	{
-		return $this->_LibelleCategorie;
+		return $this->_libelleCategorie;
 	}
 
-	public function setLibelleCategorie($LibelleCategorie)
+	public function setLibelleCategorie($libelleCategorie)
 	{
-		$this->_LibelleCategorie=$LibelleCategorie;
+		$this->_libelleCategorie=$libelleCategorie;
 	}
 
 	/*****************Constructeur***************** */
