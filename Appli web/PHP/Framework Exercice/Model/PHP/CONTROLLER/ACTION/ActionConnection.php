@@ -14,4 +14,3 @@ if ($uti != false) {
     echo '<div class="erreur">le pseudo n\'existe pas</div>';
     header("refresh:3;url=index.php?page=connection");
 }
- 
