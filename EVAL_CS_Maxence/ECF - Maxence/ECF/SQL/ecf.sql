@@ -43,4 +43,6 @@ INSERT INTO `musiciens` (`idMusicien`, `Nom`, `Prenom`, `Instrument`, `IdGroupe`
 ALTER TABLE `musiciens`
   ADD CONSTRAINT `FK_Membres_Groupes` FOREIGN KEY (`IdGroupe`) REFERENCES `groupes` (`IdGroupe`);
 
+--
+
 
