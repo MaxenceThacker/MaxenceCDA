@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Formulaires\FormulaireChambre.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Formulaires\FormulaireHotel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Formulaires\ListeChambres.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Formulaires\ListeHotels.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Formulaires\FormulaireChambre.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Formulaires\FormulaireHotel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Formulaires\ListeChambres.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Formulaires\ListeHotels.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
