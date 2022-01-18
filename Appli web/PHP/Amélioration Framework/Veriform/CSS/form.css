@@ -22,3 +22,42 @@
 label {
     align-self: center;
 }
+
+#fade{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    background-image: linear-gradient(to bottom left,var(--bgc2) 60%,var(--bgc1) 60%);
+    /* Simplifions en ne nous occupant pas des prefixes vendeurs */
+}
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+    color: var(--color);
+}
+
+.form1 {
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 10em;
+}
+
+.form2 {
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 10em;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(1em, auto);
+    width: 75%;
+}
+
+.colSpan2{
+    grid-column: 1 / span 2;
+    }
+
+
