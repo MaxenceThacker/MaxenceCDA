@@ -34,6 +34,7 @@ $routes = [
     "actionConnection" => ["PHP/CONTROLLER/ACTION/", "actionConnection", "Erreur", 0, false],
     "accueil" => ["PHP/VIEW/GENERAL/", "Accueil", "Accueil", 0, false],
     "deconnection" => ["PHP/CONTROLLER/ACTION/", "Actiondeconnection", "Erreur", 0, false],
+    "formPaiement" => ["PHP/VIEW/FORM/", "FormPaiement", "Paiement", 0, false],
 ];
 
 if (isset($_GET["page"])) {

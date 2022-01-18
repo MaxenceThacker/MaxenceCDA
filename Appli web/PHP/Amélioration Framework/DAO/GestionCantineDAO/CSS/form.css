@@ -58,4 +58,23 @@ form {
     grid-column: 1 / span 2;
     }
 
+.gridFormPaiement{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(auto);
+}
 
+
+
+.spanThree {
+    grid-column: span 3;
+}
+
+.spanFour {
+    grid-column: span 4;
+}
+
+.spanRowFour {
+    grid-row: span 4;
+}
