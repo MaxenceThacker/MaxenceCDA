@@ -27,8 +27,8 @@ label {
     height: 100%;
     width:100%;
     position: absolute;
-    background-image: linear-gradient(to bottom left,var(--bgc2) 60%,var(--bgc1) 60%);
-    /* Simplifions en ne nous occupant pas des prefixes vendeurs */
+    background-image: linear-gradient(to bottom left,var(--bgc2) 50%,var(--bgc1) 60%);
+    
 }
 *{
     box-sizing: border-box;
@@ -39,13 +39,11 @@ label {
 .form1 {
     justify-content: flex-start;
     align-items: flex-end;
-    margin: 10em;
 }
 
 .form2 {
     justify-content: flex-end;
     align-items: flex-start;
-    margin: 10em;
 }
 
 form {
