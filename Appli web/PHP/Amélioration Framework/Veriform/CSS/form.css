@@ -1,0 +1,24 @@
+.fa-green {
+    color: var(--inputCorrect);
+}
+
+.fa-red {
+    color: var(--inputIncorrect);
+}
+
+.inputCorrect {
+    background-color: var(--inputCorrect);
+    color:wheat;
+}
+
+.inputIncorrect {
+    background-color: var(--inputIncorrect);
+}
+
+.inputVide {
+    background-color: var(--inputVide);
+}
+
+label {
+    align-self: center;
+}
