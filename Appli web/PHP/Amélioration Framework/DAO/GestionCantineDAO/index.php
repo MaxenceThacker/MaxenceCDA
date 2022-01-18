@@ -4,7 +4,7 @@ include "./PHP/CONTROLLER/Outils.php";
 spl_autoload_register("ChargerClasse");
 
 //on active la connexion à la base de données
-Parametre::init();
+Parametres::init();
 DbConnect::init();
 
 session_start(); // initialise la variable de Session
@@ -26,7 +26,7 @@ setcookie("lang", $_SESSION['lang'], time()+36000, '/');
 /* création d'un tableau de redirection, en fonction du page, on choisit la page à afficher */
 // Dossier / Nom du fichier / Titre de la page / Autorisation requise / Api ou pas 
 $routes = [
-    "default"=>["PHP/VIEW/GENERAL/","Accueil","Accueil",0,false],
+    "default"=>["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
 
     "inscription" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
     "actionInscription" => ["PHP/CONTROLLER/ACTION/", "actionInscription", "Erreur", 0, false],

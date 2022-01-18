@@ -1,0 +1,54 @@
+:root {
+    --color: #1b95c5;
+    --inputCorrect: #c6d8af;
+    --inputIncorrect: #AD343E;
+    --inputVide: #6689A1;
+    --bgc1:#EFA48B;
+    --bgc2:#685369;
+}
+
+html, main, body, div, a, header, footer, nav, article, section, aside, fieldset, label, input, select, #fade {
+    display: flex;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+img, video {
+    width: 100%;
+}
+
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Différent taille de flex. */
+.vMini { flex: 0.05; }
+
+.mini { flex: 0.2; }
+
+.demi { flex: 0.5; }
+
+.double { flex: 2; }
+
+.triple { flex: 3; }
+
+.espace {
+    flex: none;
+    height: 2vh;
+}
+
+.bigEspace {
+    flex: none;
+    height: 5vh;
+}
+
+.miniEspace {
+    flex: none;
+    height: 0.2vh;
+}

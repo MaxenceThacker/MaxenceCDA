@@ -164,21 +164,12 @@ VALUES
   (4, 'Reservation', 'EN', 'Reservation'),
   (5, 'Modifier', 'FR', 'Modifier'),
   (6, 'Modifier', 'EN', 'Update'),
-  (7, 'Supprimer', 'FR', 'Supprimer),
+  (7, 'Supprimer', 'FR', 'Supprimer'),
   (8, 'Supprimer', 'EN', 'Remove'),
   (9, 'Menu', 'FR', 'Menu'),
   (10, 'Menu', 'EN', 'Menu'),
-  (11, 'Paiement', 'FR', 'Paiement');
+  (11, 'Paiement', 'FR', 'Paiement'),
   (12, 'Paiement', 'EN', 'Paiement'),
   (13, 'Eleves', 'FR', 'Eleves'),
   (14, 'Eleves', 'EN', 'Students');
   
-
--- TRUNCATE Reservations;
--- TRUNCATE Paiements;
--- TRUNCATE Menus;
--- TRUNCATE Eleves;
--- TRUNCATE Users;
--- TRUNCATE Roles;
--- TRUNCATE ModesDePaiement;
--- TRUNCATE Texte;
