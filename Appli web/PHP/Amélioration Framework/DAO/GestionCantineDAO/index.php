@@ -26,7 +26,7 @@ setcookie("lang", $_SESSION['lang'], time()+36000, '/');
 /* création d'un tableau de redirection, en fonction du page, on choisit la page à afficher */
 // Dossier / Nom du fichier / Titre de la page / Autorisation requise / Api ou pas 
 $routes = [
-    "default"=>["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
+    "default"=>["PHP/VIEW/LISTE/", "ListePaiement", "ListePaiements", 0, false],
 
     "inscription" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
     "actionInscription" => ["PHP/CONTROLLER/ACTION/", "actionInscription", "Erreur", 0, false],
@@ -34,7 +34,10 @@ $routes = [
     "actionConnection" => ["PHP/CONTROLLER/ACTION/", "actionConnection", "Erreur", 0, false],
     "accueil" => ["PHP/VIEW/GENERAL/", "Accueil", "Accueil", 0, false],
     "deconnection" => ["PHP/CONTROLLER/ACTION/", "Actiondeconnection", "Erreur", 0, false],
+
     "formPaiement" => ["PHP/VIEW/FORM/", "FormPaiement", "Paiement", 0, false],
+    "listePaiement" => ["PHP/VIEW/LISTE/", "ListePaiement", "ListePaiements", 0, false],
+    "actionPaiement" => ["PHP/CONTROLLER/ACTION/", "ActionPaiement", "Mise à jour du Paiement", 0, false]
 ];
 
 if (isset($_GET["page"])) {

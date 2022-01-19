@@ -9,10 +9,11 @@ $liste = ProduitsManager::getList();
 
     <div class="crudColonne"><?php echo texte('Libelle') ?></div>
     <div class="crudColonne"><?php echo texte('Prix') ?></div>
-       <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    
         <?php foreach ($liste as $elt) {
             echo '<div class="crudColonne">' . $elt->getLibelleProduit() . '</div>
             <div class="crudColonne">' . $elt->getPrix() . '</div>

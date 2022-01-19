@@ -1,0 +1,35 @@
+.crudColonne {
+	padding: 0.5vw 1vw;
+	border: black solid 0.5px;
+}
+
+
+
+#crudTableau2Col{
+	display: grid;
+    grid-template-columns: 3fr 1fr 0.5fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(1.5em, auto);
+}
+
+#crudTableau{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(1.5em, auto);
+}
+
+.crudBtn {
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	text-align: center;
+	color: #000;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.4);
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+	margin: 0.5vw;
+	padding: 0.5vw;
+}
+
+.crudBtnOutil {
+	margin: 1vw;
+}

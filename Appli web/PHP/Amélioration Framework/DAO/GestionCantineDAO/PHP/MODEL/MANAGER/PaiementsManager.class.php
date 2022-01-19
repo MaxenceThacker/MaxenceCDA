@@ -26,7 +26,7 @@ class PaiementsManager
 	public static function getList(array $nomColonnes=null,  array $conditions = null, string $orderBy = null, string $limit = null, bool $api = false, bool $debug = false)
 	{
 		$nomColonnes = ($nomColonnes==null)?Paiements::getAttributes():$nomColonnes;
-		var_dump($nomColonnes);
+		
  		return DAO::select($nomColonnes,"Paiements",   $conditions ,  $orderBy,  $limit ,  $api,  $debug );
 	}
 }

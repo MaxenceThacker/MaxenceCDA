@@ -40,7 +40,7 @@ class Paiements
 		return $this->_datePaiement;
 	}
 
-	public function setDatePaiement(DateTime $datePaiement)
+	public function setDatePaiement($datePaiement)
 	{
 		$this->_datePaiement=$datePaiement;
 	}
@@ -50,7 +50,7 @@ class Paiements
 		return $this->_idEleve;
 	}
 
-	public function setIdEleve(DateTime $idEleve)
+	public function setIdEleve($idEleve)
 	{
 		$this->_idEleve=$idEleve;
 	}

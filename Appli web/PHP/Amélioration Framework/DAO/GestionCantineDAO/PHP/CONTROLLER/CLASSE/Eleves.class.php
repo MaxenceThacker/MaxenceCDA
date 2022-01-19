@@ -50,7 +50,7 @@ class Eleves
 		return $this->_DDNEleve;
 	}
 
-	public function setDDNEleve(DateTime $DDNEleve)
+	public function setDDNEleve($DDNEleve)
 	{
 		$this->_DDNEleve=$DDNEleve;
 	}

@@ -25,7 +25,7 @@ class MenusManager
 	public static function getList(array $nomColonnes=null,  array $conditions = null, string $orderBy = null, string $limit = null, bool $api = false, bool $debug = false)
 	{
 		$nomColonnes = ($nomColonnes==null)?Menus::getAttributes():$nomColonnes;
-		var_dump($nomColonnes);
+		
  		return DAO::select($nomColonnes,"Menus",   $conditions ,  $orderBy,  $limit ,  $api,  $debug );
 	}
 }
