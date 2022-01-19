@@ -26,7 +26,7 @@
         $listeModesDePaiement = ModesDePaiementManager::getList();
         
 
-        echo '<div class="gridFormPaiement">';
+        echo '<div class="gridForm">';
         //id
         echo '  <input type="hidden" name="idPaiement" value="' . $pai->getIdPaiement() . '">';
         //date du Paiement

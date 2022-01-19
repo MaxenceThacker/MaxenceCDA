@@ -58,19 +58,20 @@ form {
     grid-column: 1 / span 2;
     }
 
-.gridFormPaiement{
+.gridForm{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
     grid-auto-rows: minmax(auto);
 }
 
-.gridFormEleve{
+.gridForm{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
     grid-auto-rows: minmax(auto);
 }
+
 
 
 

@@ -15,30 +15,30 @@
         echo '<h2>' . 'Eleve' .'</h2>
         <form id="formulaire" method="post" action="index.php?page=actionEleve&mode=' . $defaultMode . '">';
         if (isset($_GET['id'])) {
-            $pai = ElevesManager::findById($_GET['id']);
-            $idPai = $pai->getIdEleve();
+            $ele = ElevesManager::findById($_GET['id']);
+            $idEle = $ele->getIdEleve();
         } else {
-            $pai = new Eleves();
-            $idPai = null;
+            $ele = new Eleves();
+            $idEle = null;
         }
 
         
 
-        echo '<div class="gridFormEleve">';
+        echo '<div class="gridForm">';
         //id
-        echo '  <input type="hidden" name="idEleve" value="' . $pai->getIdEleve() . '">';
+        echo '  <input type="hidden" name="idEleve" value="' . $ele->getIdEleve() . '">';
         //NomEleve
         echo '  <label class="colSpan2">'. 'NomEleve'.' :</label>
-                <input class="spanFour" type="texte" name="nomEleve" value="' . $pai->getNomEleve() . '"' . $disabled . '>';
+                <input class="spanFour" type="texte" name="nomEleve" value="' . $ele->getNomEleve() . '"' . $disabled . '>';
         //PrenomEleve
         echo '  <label class="colSpan2">'. 'PrenomomEleve'.' :</label>
-                <input class="spanFour" type="texte" name="prenomEleve" value="' . $pai->getPrenomEleve() . '"' . $disabled . '>';
+                <input class="spanFour" type="texte" name="prenomEleve" value="' . $ele->getPrenomEleve() . '"' . $disabled . '>';
         //DDNEleve
         echo '  <label class="colSpan2">'. 'DDNEleve'.' :</label>
-                <input class="spanFour" type="date" name="DDNEleve" value="' . $pai->getDDNEleve() . '"' . $disabled . '>';
+                <input class="spanFour" type="date" name="DDNEleve" value="' . $ele->getDDNEleve() . '"' . $disabled . '>';
         //montant
         echo '  <label class="colSpan2">'. 'Solde'.' :</label>
-                <input class="spanFour" type="text" name="solde" value="' . $pai->getSoldeEleve() . '"' . $disabled . '>';
+                <input class="spanFour" type="text" name="solde" value="' . $ele->getSoldeEleve() . '"' . $disabled . '>';
         echo '</div>';
         echo '</form>';
         ?>
