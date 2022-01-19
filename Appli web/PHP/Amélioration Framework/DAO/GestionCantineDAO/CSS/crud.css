@@ -19,6 +19,14 @@
     grid-auto-rows: minmax(1.5em, auto);
 }
 
+
+#crudTableau1{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(1.5em, auto);
+}
+
 .crudBtn {
 	font-family: Arial, sans-serif;
 	font-size: 1em;
