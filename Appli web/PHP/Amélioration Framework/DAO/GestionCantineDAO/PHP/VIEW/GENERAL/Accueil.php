@@ -1,3 +1,7 @@
-<?php
-$d = MenusManager::getList(null,["idMenu"=>1,"LibelleMenu"=>"%i%"],"libelleMenu DESC",null,true,true);
-var_dump($d);
+<div class="demiPage colonne center">
+        <a href="index.php?page=listeEleve"><?php echo 'Eleve' ?></a>
+        <div></div>
+        <a href="index.php?page=listePaiement"><?php echo 'Paiement' ?></a>
+        <div></div>
+    </div>
+</div>

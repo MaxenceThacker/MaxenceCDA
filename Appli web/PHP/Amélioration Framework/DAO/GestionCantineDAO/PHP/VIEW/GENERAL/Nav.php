@@ -6,7 +6,7 @@
                 <div class="miniEspace"></div>
                 <div>
                     <div></div>
-                    <a href="index.php?page=accueil">
+                    <a href="index.php?page=listePaiement">
                         <div>
                         <i class="far fa-light fa-alicorn fa-3x"></i>
                         </div>
@@ -16,7 +16,7 @@
                 <div class="miniEspace"></div>
                 <div>
                     <div></div>
-                    <a href="index.php?page=formPaiement&mode=Ajout">
+                    <a href="index.php?page=listeEleve">
                         <div>
                         <i class="fa-light fa-alien fa-3x"></i>
                         </div>
@@ -28,3 +28,4 @@
     <?php
         }
     ?>
+

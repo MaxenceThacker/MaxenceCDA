@@ -9,7 +9,7 @@ if ($_POST['motDePasse'] == $_POST['confirmation'])
         $u = new Users($_POST);
         $u->setMDPUser(crypte($u->getMDPUser()));
         UsersManager::add($u);
-        header("location:index.php?page=connection");
+        header("location:index.php?page=accueil");
     } else 
     {
         echo '<div class="erreur">l\'email existe deja</div>';
