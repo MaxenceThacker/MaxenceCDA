@@ -1,4 +1,4 @@
-<div class="demiPage colonne center">
+<div class="demiPage colonne center accueil">
         <a href="index.php?page=ListeEleves"><?php echo 'Eleves' ?></a>
         <div></div>
         <a href="index.php?page=ListePaiements"><?php echo 'Paiements' ?></a>
