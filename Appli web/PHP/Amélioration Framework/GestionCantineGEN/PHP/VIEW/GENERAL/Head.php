@@ -10,6 +10,7 @@ echo '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 <link rel="stylesheet" href="CSS/root.css">
+<link rel="stylesheet" href="CSS/menu.css">
 <link rel="stylesheet" href="CSS/style.css">';
 if (substr($page[1],0,4)=="Form"){
     echo '  <link rel="stylesheet" href="CSS/grids.css">
