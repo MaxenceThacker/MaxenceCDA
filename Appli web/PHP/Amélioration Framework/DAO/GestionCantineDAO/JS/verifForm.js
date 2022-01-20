@@ -88,7 +88,7 @@ function changeColor(listInputs, listInputsValidity) {
         } else if (listInputsValidity[element.name] == false && (element.type == "number" || element.value != "")) {
             element.classList.add(red);
         } else {
-            element.classList.add(white);
+                element.classList.add(white);
         }
     });
 };
