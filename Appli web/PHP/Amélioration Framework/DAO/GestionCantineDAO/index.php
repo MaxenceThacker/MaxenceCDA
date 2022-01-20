@@ -26,7 +26,7 @@ setcookie("lang", $_SESSION['lang'], time()+36000, '/');
 /* création d'un tableau de redirection, en fonction du page, on choisit la page à afficher */
 // Dossier / Nom du fichier / Titre de la page / Autorisation requise / Api ou pas 
 $routes = [
-    "default"=> ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
+    "default"=> ["PHP/VIEW/GENERAL/", "Accueil", "Accueil", 0, false],
 
     "inscription" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
     "actionInscription" => ["PHP/CONTROLLER/ACTION/", "actionInscription", "Erreur", 0, false],
@@ -38,6 +38,14 @@ $routes = [
     "formPaiement" => ["PHP/VIEW/FORM/", "FormPaiement", "Paiement", 0, false],
     "listePaiement" => ["PHP/VIEW/LISTE/", "ListePaiement", "ListePaiements", 0, false],
     "actionPaiement" => ["PHP/CONTROLLER/ACTION/", "ActionPaiement", "Mise à jour du Paiement", 0, false],
+
+    "formMenu" => ["PHP/VIEW/FORM/", "FormMenu", "Menu", 0, false],
+    "listeMenu" => ["PHP/VIEW/LISTE/", "ListeMenu", "ListeMenus", 0, false],
+    "actionMenu" => ["PHP/CONTROLLER/ACTION/", "ActionMenu", "Mise à jour du Menu", 0, false],
+
+    "formModeDePaiement" => ["PHP/VIEW/FORM/", "FormModeDePaiement", "ModeDePaiement", 0, false],
+    "listeModeDePaiement" => ["PHP/VIEW/LISTE/", "ListeModeDePaiement", "ListeModeDePaiements", 0, false],
+    "actionModeDePaiement" => ["PHP/CONTROLLER/ACTION/", "ActionModeDePaiement", "Mise à jour du ModeDePaiement", 0, false],
 
     "formEleve" => ["PHP/VIEW/FORM/", "FormEleve", "Eleve", 0, false],
     "listeEleve" => ["PHP/VIEW/LISTE/", "ListeEleve", "ListeEleves", 0, false],

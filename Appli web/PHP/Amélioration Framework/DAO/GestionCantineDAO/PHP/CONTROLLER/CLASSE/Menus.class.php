@@ -29,7 +29,7 @@ class Menus
 		return $this->_dateMenu;
 	}
 
-	public function setDateMenu(DateTime $dateMenu)
+	public function setDateMenu($dateMenu)
 	{
 		$this->_dateMenu=$dateMenu;
 	}
