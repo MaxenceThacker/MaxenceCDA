@@ -97,7 +97,7 @@ class Users
  			$methode = "set".ucfirst($key); //ucfirst met la 1ere lettre en majuscule
 			if (is_callable(([$this, $methode]))) // is_callable verifie que la methode existe
 			{
-				$this->$methode($value);
+				$this->$methode===""?null:$value;
 			}
 		}
 	}

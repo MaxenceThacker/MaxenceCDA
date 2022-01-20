@@ -1,9 +1,9 @@
 <?php
 
 
-if ($_POST['motDePasse'] == $_POST['confirmation']) 
+if ($_POST['MDPUser'] == $_POST['confirmation']) 
 {
-    $uti = UsersManager::findByEmail($_POST['email']);
+    $uti = UsersManager::getList($_POST['emailUser']);
     if ($uti == false) 
     {
         $u = new Users($_POST);

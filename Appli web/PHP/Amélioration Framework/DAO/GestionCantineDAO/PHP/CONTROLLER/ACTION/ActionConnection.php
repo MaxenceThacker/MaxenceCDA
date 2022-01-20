@@ -1,8 +1,8 @@
 <?php
-$uti = UsersManager::findByEmail($_POST['email']);
+$uti = UsersManager::getList($_POST['emailUser']);
 if ($uti != false) {
-    echo "motBDD " . $uti->getMDPUser() . "  saisi" . $_POST['motDePasse'] . "crypte   " . crypte($_POST['motDePasse']) . "<br>";
-    if (crypte($_POST['motDePasse']) == $uti->getMDPUser()) {
+    echo "motBDD " . $uti->getMDPUser() . "  saisi" . $_POST['MDPUser'] . "crypte   " . crypte($_POST['MDPUser']) . "<br>";
+    if (crypte($_POST['MDPUser']) == $uti->getMDPUser()) {
         echo 'connection reussie';
         $_SESSION['utilisateur'] = $uti;
         header("location:index.php?page=accueil");

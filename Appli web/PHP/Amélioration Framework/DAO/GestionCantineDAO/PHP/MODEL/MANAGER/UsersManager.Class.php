@@ -22,10 +22,6 @@ class UsersManager
  		return DAO::select(Users::getAttributes(),"Users",["idUser" => $id])[0];
 	}
 
-	public static function findByEmail($id)
-	{
- 		return DAO::select(Users::getAttributes(),"Users",["emailUser" => $id])[0];
-	}
 
 	public static function getList(array $nomColonnes=null,  array $conditions = null, string $orderBy = null, string $limit = null, bool $api = false, bool $debug = false)
 	{
