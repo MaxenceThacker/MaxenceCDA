@@ -1,0 +1,11 @@
+.gridConnectionInscription {
+    display: grid;
+    border: 0.5px solid rgb(255, 234, 234);
+    grid-template-columns: 0.2fr 2fr 2fr 0.2fr;
+    grid-gap: 0.5em;
+}
+
+.sectionConnectionInscription {
+    text-align: center;
+    border-bottom: thick doublergb(50, 99, 206);
+}
