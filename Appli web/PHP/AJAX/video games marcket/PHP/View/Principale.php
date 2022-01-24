@@ -6,9 +6,9 @@
 </div>
 <div id="divContenu">
 	<div class="ligne titreLigne">
-		<div class="commune">Commune</div>
-		<div class="nom">Nom</div>
-		<div class="etat">Etat</div>
+		<div class="nombre_d_exemplaires">Nombre d'exemplaires</div>
+		<div class="titre">Titre</div>
+		<div class="date">Date</div>
 	</div>
 	<div class="espaceHorizon"></div>
 </div>
