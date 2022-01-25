@@ -5,7 +5,7 @@ $listeAuteursOeuvres = Auteurs_OeuvresManager::getList();
     <option value="defaut" selected>--Choisissez votre Auteur et ses oeuvres--</option>
     <?php
                 foreach ($listeAuteursOeuvres as $elt) {
-                    echo '<option value="' . $elt->getIdAuteur() . '">' . $elt->getNomAuteur() . " " . $elt->getPrenomAuteur() . " " . $elt->getNomOeuvre() . '</option>';
+                    echo '<option value="' . $elt->getIdAuteur() . '">' . $elt->getNomAuteur() . " " . $elt->getPrenomAuteur() . " " . $elt->getTitreOeuvre() . '</option>';
                 }   
     ?>
 </select>

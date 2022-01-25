@@ -54,7 +54,7 @@ $routes=[
 	"FormUtilisateurs"=>["PHP/VIEW/FORM/","FormUtilisateurs","Formulaire Utilisateurs",0,false],
 	"ActionUtilisateurs"=>["PHP/CONTROLLER/ACTION/","ActionUtilisateurs","Action Utilisateurs",0,false],
 
-	"APIAuteursOeuvres"=>["PHP/MODEL/API/","APIAuteursOeuvres", "APIAuteursOeuvres",false,0,true]
+	"APIAuteursOeuvres"=>["PHP/MODEL/API/","ListeAuteursOeuvresAPI", "APIAuteursOeuvres",false,0,true]
 
 ];
 
