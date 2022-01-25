@@ -88,6 +88,13 @@ req1.onreadystatechange = function (event) {
     }
 };
 
+var actu=document.getElementById("actu");
+
+actu.addEventListener("click",function(){
+    req.open('GET', 'https://api-adresse.data.gouv.fr/search/?q=8+bd+du+port&limit=15', true);
+    req.send(null);
+});
+
 
 
 function trie(tab){
