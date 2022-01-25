@@ -16,6 +16,10 @@
 		<h3>Selectionner un point de retrait</h3>
 		<button id="actu">Actualiser</button>
 	</div>
+	
+	<div class="espaceHorizon"></div>
+	<div class="espaceHorizon"></div>
+	<div class="espaceHorizon"></div>
 
 	<div class=" center ligne1 titreLigne">
 		<div class="ligne1 label">Label</div>
