@@ -1,5 +1,5 @@
 var contenu = document.getElementById("contenu");
-var contenu = document.getElementById("contenu2");
+var contenu1 = document.getElementById("contenu1");
 var enregs;
 var enregs1;
 
@@ -31,17 +31,19 @@ req.onreadystatechange = function (event) {
                 ligne.appendChild(titre);
                 date = document.createElement("div");
                 date.setAttribute("class", "date");
-                console.log();
+                console.log(ligne);
                 ligne.appendChild(date);
+                contenu.appendChild(ligne);
                 espace = document.createElement("div");
                 espace.setAttribute("class","espaceHorizon");
+                contenu.appendChild(espace);
                 //on met à jour le contenu
                 nombre_d_exemplaires.innerHTML = enregs[i].fields.nombre_d_exemplaires;
                 titre.innerHTML = enregs[i].fields.titre;
                 date.innerHTML = enregs[i].fields.date;
             } 
         } else {
-            // console.log("Status de la réponse: %d (%s)", this.status, this.statusText);
+            console.log("Status de la réponse: %d (%s)", this.status, this.statusText);
         }
         
     }
@@ -59,7 +61,7 @@ req1.onreadystatechange = function (event) {
             for (let i = 0; i < enregs1.length; i++) {
                 // on crée la ligne et les div internes
                 ligne1 = document.createElement("div");
-                ligne1.setAttribute("class", "ligne");
+                ligne1.setAttribute("class", "ligne1");
                 ligne1.id = i;
                 label = document.createElement("div");
                 label.setAttribute("class", "label");
@@ -80,7 +82,7 @@ req1.onreadystatechange = function (event) {
                 city.innerHTML = enregs1[i].properties.city;
             } 
         } else {
-            // console.log("Status de la réponse: %d (%s)", this.status, this.statusText);
+            console.log("Status de la réponse: %d (%s)", this.status, this.statusText);
         }
         
     }
