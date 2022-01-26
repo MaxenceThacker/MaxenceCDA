@@ -5,7 +5,7 @@ $disabled = " ";
 switch ($mode) {
 	case "Afficher":
 	case "Supprimer":
-		$disabled = " disabled ";
+		$disabled = " disabled";
 		break;
 }
 

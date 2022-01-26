@@ -18,11 +18,11 @@ echo '<div class="caseListe grid-columns-span-8">
 <div></div>
 </div>';
 
-echo '<div class="caseListe">Nom</div>';
-echo '<div class="caseListe">Prenom</div>';
-echo '<div class="caseListe">AdresseMail</div>';
-echo '<div class="caseListe">MotDePasse</div>';
-echo '<div class="caseListe">Role</div>';
+echo '<div class="caseListe">nom</div>';
+echo '<div class="caseListe">prenom</div>';
+echo '<div class="caseListe">adresseMail</div>';
+echo '<div class="caseListe">motDePasse</div>';
+echo '<div class="caseListe">role</div>';
 
 //Remplissage de div vide pour la structure de la grid
 echo '<div class="caseListe"></div>';

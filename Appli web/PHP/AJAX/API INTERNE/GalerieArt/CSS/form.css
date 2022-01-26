@@ -8,16 +8,17 @@
 }
 
 .inputCorrect {
-    box-shadow: 2px 2px 3px var(--inputCorrect);
+    background-color: var(--inputCorrect);
+    color:wheat;
 }
 
 .inputIncorrect {
-    box-shadow: 2px 2px 3px var(--inputIncorrect);
+    background-color: var(--inputIncorrect);
 }
 
 .inputVide {
+    background-color: var(--inputVide);
 }
-
 
 input, select {
     box-shadow: 2px 2px 3px black;

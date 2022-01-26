@@ -18,9 +18,9 @@ echo '<div class="caseListe grid-columns-span-6">
 <div></div>
 </div>';
 
-echo '<div class="caseListe">NomAuteur</div>';
-echo '<div class="caseListe">PrenomAuteur</div>';
-echo '<div class="caseListe">DateNaissanceAuteur</div>';
+echo '<div class="caseListe">nomAuteur</div>';
+echo '<div class="caseListe">prenomAuteur</div>';
+echo '<div class="caseListe">dateNaissanceAuteur</div>';
 
 //Remplissage de div vide pour la structure de la grid
 echo '<div class="caseListe"></div>';

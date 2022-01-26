@@ -62,7 +62,6 @@ function afficherPage($page)
 			include 'PHP/VIEW/GENERAL/Footer.php';
 		}
 	} else {
-	$nom = "FormInscriptionConnexion";
 		$titre = "Authorisation insuffisante";
 		include 'PHP/VIEW/GENERAL/Head.php';
 		include 'PHP/VIEW/GENERAL/Header.php';
@@ -77,7 +76,7 @@ function decode($texte)
 	return $texte;
 }
 $regex = [
-	"alpha" => "[A-Za-z]{2,}-?[A-Za-z]{2,}",
+	"alpha" => "[A-Za-z]*",
 	"alphaNum" => "[A-Za-z0-9]*",
 	"alphaMaj" => "[A-Z]*",
 	"alphaMin" => "[a-z]*",
@@ -86,9 +85,9 @@ $regex = [
 	"email" => "[A-Za-z]([\.\-_]?[A-Za-z0-9])+@[A-Za-z]([\.\-_]?[A-Za-z0-9])+\.[A-Za-z]{2,4}",
 	"date" => "[0-3]?[0-9](\/|-)(0|1)?[0-9](\/|-)[0-9]{4}",
 	"pwd" => "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}",
-	"tel" => "0[0-9]([-/. ]?[0-9]{2}){4}",
+	"tel" => "0[0-9]([-/. ][0-9]{2}){4}",
 	"postal" => "[0-9]{5}",
-	"*"  => "*"
+	"*"  => ""
 ];
 
 
@@ -137,10 +136,10 @@ function appelGet($obj, $chaine)
  * @param boolean $api false par défaut, mettre true si on souhaite recevoir la réponse sous forme de tableau de string sinon sous forme de tableau d'objets.
  * @return void
  */
-function creerSelect(?int $valeur, string $table, array $nomColonnes, string $attributs = "", array $condition = null, string $orderBy = null, $api = false)
+function creerSelect(int $valeur, string $table, array $nomColonnes, string $attributs = "", array $condition = null, string $orderBy = null, $api = false)
 {
 		$nomId= $table::getAttributes()[0];
-		$select = '<select id="' . $nomId . '" name="' . $nomId . '"' . $attributs . '>';
+		$select = '<select id="' . $nomId . '" name="' . $nomId . '"' . $attributs . '">';
 		$methode = $table . 'Manager';
 		$libelle= $nomColonnes;
 		array_push($nomColonnes, $nomId);
@@ -153,7 +152,7 @@ function creerSelect(?int $valeur, string $table, array $nomColonnes, string $at
 		foreach ($liste as $elt) {
 				$content = "";
 				foreach ($libelle as $value) {
-						$content .= appelGet($elt, $value) . " ";
+						$content .= appelGet($elt, $value) . "";
 				}
 				if ($valeur == appelGet($elt, $nomId)) {
 						$select .= '<option value="' . appelGet($elt, $nomId) . '" SELECTED>' . $content . '</option>';

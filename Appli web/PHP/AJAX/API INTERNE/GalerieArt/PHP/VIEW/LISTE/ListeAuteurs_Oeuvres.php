@@ -18,13 +18,13 @@ echo '<div class="caseListe grid-columns-span-10">
 <div></div>
 </div>';
 
-echo '<div class="caseListe">NomAuteur</div>';
-echo '<div class="caseListe">PrenomAuteur</div>';
-echo '<div class="caseListe">DateNaissanceAuteur</div>';
-echo '<div class="caseListe">IdOeuvre</div>';
-echo '<div class="caseListe">TitreOeuvre</div>';
-echo '<div class="caseListe">TypeOeuvre</div>';
-echo '<div class="caseListe">DateOeuvre</div>';
+echo '<div class="caseListe">nomAuteur</div>';
+echo '<div class="caseListe">prenomAuteur</div>';
+echo '<div class="caseListe">dateNaissanceAuteur</div>';
+echo '<div class="caseListe">idOeuvre</div>';
+echo '<div class="caseListe">titreOeuvre</div>';
+echo '<div class="caseListe">typeOeuvre</div>';
+echo '<div class="caseListe">dateOeuvre</div>';
 
 //Remplissage de div vide pour la structure de la grid
 echo '<div class="caseListe"></div>';

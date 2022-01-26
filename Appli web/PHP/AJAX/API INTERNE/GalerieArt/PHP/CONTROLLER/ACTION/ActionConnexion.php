@@ -1,6 +1,6 @@
 <?php
     
-$uti =  UtilisateursManager::getList(null, ['adresseMail' => $_POST['adresseMail']]);
+$uti =  UtilisateursManager::getList(['adresseMail, motDePasse'], ['adresseMail' => $_POST['adresseMail']]);
 if ($uti != null) {
     if ($uti[0]->getMotDePasse() == crypte($_POST['motDePasse'])) {       
         echo 'connection reussie';

@@ -18,8 +18,8 @@ echo '<div class="caseListe grid-columns-span-5">
 <div></div>
 </div>';
 
-echo '<div class="caseListe">IdAuteur</div>';
-echo '<div class="caseListe">IdOeuvre</div>';
+echo '<div class="caseListe">idAuteur</div>';
+echo '<div class="caseListe">idOeuvre</div>';
 
 //Remplissage de div vide pour la structure de la grid
 echo '<div class="caseListe"></div>';

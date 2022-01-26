@@ -8,9 +8,9 @@
 
             if (isset($_SESSION['utilisateur'])) {
                 echo '<div class="center">'. texte('Bonjour') ." ". $_SESSION['utilisateur']->getNom() . '</div>';
-                echo '<div><a href="index.php?page=ActionDeconnexion" class="center">'. texte("Deconnexion") .'</a></div>';
+                echo '<div><a href="index.php?page=actionDeconnexion" class="center">'. texte("Deconnection") .'</a></div>';
             } else {
-                echo '<a href="index.php?page=Default" class="center">'. texte("Connexion") .'</a>';
+                echo '<a href="index.php?page=connection" class="center">'. texte("Connexion") .'</a>';
             }
             ?>
 
