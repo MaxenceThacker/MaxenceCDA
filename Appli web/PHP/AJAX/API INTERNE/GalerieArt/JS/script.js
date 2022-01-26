@@ -12,7 +12,7 @@ req.onreadystatechange = function (event) {
             reponse=JSON.parse(this.responseText);
             listeOeuvre.innerHTML="";
             for (let i = 0; i < reponse.length; i++) {
-                countOeuvres(reponse[i].typeOeuvre, reponse[i].titreOeuvre, reponse[i].idOeuvre);   
+                countOeuvres(reponse[i].idOeuvre);   
             }
             console.log(reponse);
         } else {
@@ -21,14 +21,14 @@ req.onreadystatechange = function (event) {
     }
 };
 
-req.onreadystatechange = function (event) {
+req2.onreadystatechange = function (event) {
     if (this.readyState == XMLHttpRequest.DONE) {
         if (this.status === 200) {
             console.log("Réponse reçue: %s", this.responseText);;
             reponse=JSON.parse(this.responseText);
             listeOeuvre.innerHTML="";
             for (let i = 0; i < reponse.length; i++) {
-                countOeuvres(reponse[i]);   
+                
             }
             console.log(reponse);
         } else {
@@ -37,7 +37,7 @@ req.onreadystatechange = function (event) {
     }
 };
 
-function countOeuvres(typeOeuvre,titreOeuvre,idOeuvre) {
+function countOeuvres(idOeuvre) {
 
     let OeuvreCompte = document.createElement("div");
     OeuvreCompte.setAttribute("class", "uneOeuvreCompte");
