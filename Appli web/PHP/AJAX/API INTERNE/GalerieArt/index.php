@@ -25,7 +25,7 @@ setcookie("lang", $_SESSION['lang'], time()+36000, '/');
 /******Fin des langues******/
 
 $routes=[
-	"Default"=>["PHP/VIEW/FORM/","FormInscriptionConnexion","Connexion & Inscription",0,false],
+	"Default"=>["PHP/VIEW/GENERAL/","Accueil","Accueil",0,false],
 	"Accueil"=>["PHP/VIEW/GENERAL/","Accueil","Accueil",0,false],
 
 	"ActionConnexion"=>["PHP/CONTROLLER/ACTION/","ActionConnexion","Action de la connexion",0,false],
@@ -54,6 +54,11 @@ $routes=[
 	"FormUtilisateurs"=>["PHP/VIEW/FORM/","FormUtilisateurs","Formulaire Utilisateurs",0,false],
 	"ActionUtilisateurs"=>["PHP/CONTROLLER/ACTION/","ActionUtilisateurs","Action Utilisateurs",0,false],
 
+	"ListeAuteursAPI"=>["PHP/MODEL/API/","ListeAuteursAPI", "ListeAuteursAPI",false,0,true],
+    "ListeCreationsAPI"=>["PHP/MODEL/API/","ListeCreationsAPI", "ListeCreationsAPI",false,0,true],
+    "ListeOeuvresAPI"=>["PHP/MODEL/API/","ListeOeuvresAPI", "ListeOeuvresAPI",false,0,true],
+    "ListeAuteursOeuvresAPI"=>["PHP/MODEL/API/","ListeAuteursOeuvresAPI", "ListeAuteursOeuvresAPI",false,0,true]
+	
 ];
 
 if(isset($_GET["page"]))
