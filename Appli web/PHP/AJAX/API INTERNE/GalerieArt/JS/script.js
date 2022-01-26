@@ -1,5 +1,5 @@
-const req = XMLHttpRequest();
-const req2 = XMLHttpRequest();
+const req = new XMLHttpRequest();
+const req2 = new XMLHttpRequest();
 var listeOeuvres = document.querySelector('.countOeuvre');
 var select = document.querySelector('select');
 
@@ -12,7 +12,7 @@ req.onreadystatechange = function (event) {
             reponse=JSON.parse(this.responseText);
             listeOeuvre.innerHTML="";
             for (let i = 0; i < reponse.length; i++) {
-                countOeuvres(reponse[i].idOeuvre);   
+                countOeuvres(reponse[i].titreOeuvre);   
             }
             console.log(reponse);
         } else {

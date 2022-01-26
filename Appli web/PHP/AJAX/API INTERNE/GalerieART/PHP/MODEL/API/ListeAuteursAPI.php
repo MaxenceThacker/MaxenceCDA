@@ -1,2 +1,2 @@
 <?php
-echo json_encode(AuteursManager::getList(null, null,null,null,null,true,false));
+echo json_encode(AuteursManager::getList(true));

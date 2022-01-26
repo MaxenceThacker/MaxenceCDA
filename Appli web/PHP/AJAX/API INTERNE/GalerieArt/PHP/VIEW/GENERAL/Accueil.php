@@ -1,18 +1,13 @@
 <?php
-$listeAuteurs = AuteursManager::getList(false);
+$listeAuteurs = AuteursManager::getList();
 ?>
 <div class="padd1"></div>
 <div>
     <div class="flex06"></div>
     <div class="column">
-        <select>
-            <option value="defaut" selected>--Choisissez votre Auteur--</option>
-            <?php
-                foreach ($listeAuteurs as $elt) {
-                    echo '<option value="' . $elt->getIdAuteur() . '">' . $elt->getNomAuteur() . " " . $elt->getPrenomAuteur() . '</option>';
-                }   
-            ?>
-        </select>
+    <?php
+        echo creerSelect(null,"idAi",["libelleTypeProduit"]);
+    ?>  
         <div class="countOeuvre column"></div>
     </div>
     <div class="flex06"></div>
