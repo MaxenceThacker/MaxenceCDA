@@ -2,6 +2,7 @@
 using Cinema.Data.DTOs;
 using Cinema.Data.Models;
 using Cinema.Data.Services;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace Cinema.Controllers
 {
+    [EnableCors("Cinema")]
     [Route("api/[Controller]")]
     [ApiController]
     public class SeanceController : ControllerBase

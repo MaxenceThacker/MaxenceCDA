@@ -1,3 +1,4 @@
+using Cinema.Data.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,9 +31,25 @@ namespace Cinema
             services.AddDbContext<MyDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("Default"))); 
             services.AddControllersWithViews();
             services.AddControllers();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddTransient<FilmServices>();
+            services.AddTransient<SalleServices>();
+            services.AddTransient<SeanceServices>();
+            services.AddTransient<TexteServices>();
+            services.AddTransient<UtilisateurServices>();
+           
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Cinema", Version = "v1" });
+            });
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: "Cinema",
+                                    builder =>
+                                    {
+                                        builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod();
+                                    });
             });
         }
 
@@ -49,6 +66,8 @@ namespace Cinema
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("Cinema");
 
             app.UseAuthorization();
 
