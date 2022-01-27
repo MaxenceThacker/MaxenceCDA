@@ -1,0 +1,47 @@
+<?php
+global $regex;
+$mode = $_GET['mode'];
+$disabled = " ";
+switch ($mode) {
+	case "Afficher":
+	case "Supprimer":
+		$disabled = " disabled";
+		break;
+}
+
+if (isset($_GET['id'])) {
+	$elm = FilmsManager::findById($_GET['id']);
+} else {
+	$elm = new Films();
+}
+echo '<main class="center">';
+
+echo '<form class="GridForm" action="index.php?page=ActionFilms&mode='.$_GET['mode'].'" method="post"/>';
+
+echo '<div class="caseForm col-span-form">Formulaire Films</div>';
+if ($mode != "Ajouter") {
+	echo '<div class="noDisplay"><input type="hidden" value="'.$elm->getIdFilm().'" name=IdFilm></div>';
+};
+echo '<div class="caseForm">LibelleFilm</div>';
+echo '<div class="caseForm"><input type="text" '.$disabled;
+echo ($mode == "Ajouter") ? "" : " value=".$elm->getLibelleFilm(); echo ' name=LibelleFilm pattern="'.$regex["*"].'"></div>';
+echo '<div class="caseForm"><i class="fas fa-question-circle"></i></div>';
+echo '<div class="caseForm"><i class="fas fa-check-circle"></i></div>';
+
+echo '<div class="caseForm">DureeMinuteFilm</div>';
+echo '<div class="caseForm"><input type="text" '.$disabled;
+echo ($mode == "Ajouter") ? "" : " value=".$elm->getDureeMinuteFilm(); echo ' name=DureeMinuteFilm pattern="'.$regex["*"].'"></div>';
+echo '<div class="caseForm"><i class="fas fa-question-circle"></i></div>';
+echo '<div class="caseForm"><i class="fas fa-check-circle"></i></div>';
+
+echo '<div class="caseForm col-span-form">
+	<div></div>
+	<div><a href="index.php?page=ListeFilms"><button type="button"><i class="fas fa-sign-out-alt fa-rotate-180"></i></button></a></div>
+	<div class="flex-0-1"></div>';
+	echo ($mode == "Afficher") ? "" : " <div><button type=\"submit\"><i class=\"fas fa-paper-plane\"></i></button></div>";
+	echo'<div></div>
+	</div>';
+
+echo'</form>';
+
+echo '</main>';
