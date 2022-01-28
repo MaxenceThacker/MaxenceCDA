@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Cinema.Controllers
 {
-    [EnableCors("Cinema")]
+    //[EnableCors("Cinema")]
     [Route("api/[Controller]")]
     [ApiController]
     public class SeanceController : ControllerBase
